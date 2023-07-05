@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 138146248}
   - component: {fileID: 138146247}
   - component: {fileID: 138146246}
+  - component: {fileID: 138146249}
   m_Layer: 0
   m_Name: Terrain_(100.00, 0.00, -200.00)
   m_TagString: Untagged
@@ -214,6 +215,240 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &138146249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 138146245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c503e08679b9d8d408f0a3e55874ae93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 0}
+  guiOpenObjectSelector: 0
+  guiTiles: 1
+  tiles:
+    allowMove: 1
+    generateInfinite: 1
+    generateRange: 2
+    retainMargin: 1
+    genAroundMainCam: 1
+    genAroundObjsTag: 0
+    genAroundTag: 
+    serializedTiles: []
+    serializedCoords: []
+    customTiles: []
+    serializedPinnedCoords: []
+  tileSize:
+    x: 1000
+    z: 1000
+  previewCoord:
+    x: 0
+    z: 0
+  previewAssigned: 0
+  tileResolution: 513
+  tileMargins: 16
+  draftsInEditor: 1
+  draftsInPlaymode: 1
+  draftResolution: 65
+  draftMargins: 2
+  guiLocks: 0
+  locks: []
+  guiInfiniteTerrains: 0
+  hideFarTerrains: 1
+  mainRange: 1
+  clearOnNodeRemove: 1
+  terrainSettings:
+    allowAutoConnect: 1
+    groupingID: 0
+    baseMapDist: 1000
+    showBaseMap: 1
+    baseMapResolution: 1024
+    drawInstanced: 1
+    pixelError: 1
+    shadowCastingMode: 0
+    reflectionProbeUsage: 1
+    editorRenderFlags: 7
+    heightmapMaximumLOD: 0
+    material: {fileID: 450093118}
+    detailDraw: 1
+    detailDistance: 80
+    detailDensity: 1
+    treeDistance: 1000
+    treeBillboardStart: 200
+    treeFadeLength: 5
+    treeFullLod: 150
+    treeLODBiasMultiplier: 1
+    bakeLightProbesForTrees: 0
+    deringLightProbesForTrees: 1
+    preserveTreePrototypeLayers: 0
+    windSpeed: 0.5
+    windSize: 0.5
+    windBending: 0.5
+    grassTint: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    guiCopy: 0
+    copyLayersTags: 1
+    copyComponents: 0
+  globals:
+    height: 250
+    heightInterpolation: 0
+    heightSplit: 129
+    heightMainApply: 2
+    heightDraftApply: 0
+    grassResDownscale: 1
+    grassResPerPatch: 16
+    grassScatterMode: 1
+    objectsNumPerFrame: 500
+    holesRes: 64
+    customControlTextureNames:
+    - _ControlTexture1
+    ctsProfile: {fileID: 0}
+    microSplatPropData: {fileID: 0}
+    microSplatTerrainDescriptor: 0
+    microSplatApplyType: 0
+    useCustomControlTextures: 0
+    microSplatNormals: 0
+    megaSplatTexList: {fileID: 0}
+    vegetationPackage: {fileID: 0}
+    assignComponent: 0
+    vegetationSystem: {fileID: 0}
+    vegetationSystemCopy: 1
+    sourceMultiPackageVsProTagName: 
+  guiSettings: 0
+  guiTileSettings: 0
+  guiOutputsSettings: 0
+  guiExposedVariables: 0
+  guiTerrainSettings: 0
+  guiDraftSettings: 0
+  guiTreesGrassSettings: 0
+  instantGenerate: 1
+  saveIntermediate: 1
+  heightWeldMargins: 5
+  splatsWeldMargins: 2
+  guiHideWireframe: 0
+  guiThreads: 0
+  applyColliders: 1
+  setDirty: 0
+  shift: 0
+  shiftThreshold: 4000
+  shiftExcludeLayers: 0
+  serializedMultithreading: 1
+  serializedMaxThreads: 3
+  serializedAutoMaxThreads: 1
+  serializedMaxApplyTime: 3
+--- !u!21 &184284249
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: HDRP/TerrainLit
+  m_Shader: {fileID: 4800000, guid: eb607f5e8fc16e140b732f33d26c8c31, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TerrainHolesTexture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _AddPrecomputedVelocity: 0
+    - _CullMode: 2
+    - _EnableHeightBlend: 0
+    - _EnableInstancedPerPixelNormal: 1
+    - _HeightTransition: 0
+    - _ReceivesSSR: 1
+    - _SpecularOcclusionMode: 1
+    - _StencilRef: 0
+    - _StencilRefDepth: 0
+    - _StencilRefGBuffer: 2
+    - _StencilWriteMask: 3
+    - _StencilWriteMaskDepth: 8
+    - _StencilWriteMaskGBuffer: 3
+    - _SupportDecals: 1
+    - _TransparentZWrite: 0
+    - _ZTestDepthEqualForOpaque: 4
+    - _ZTestGBuffer: 4
+    - _ZWrite: 1
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
+--- !u!21 &337117757
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: HDRP/TerrainLit
+  m_Shader: {fileID: 4800000, guid: eb607f5e8fc16e140b732f33d26c8c31, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TerrainHolesTexture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _AddPrecomputedVelocity: 0
+    - _CullMode: 2
+    - _EnableHeightBlend: 0
+    - _EnableInstancedPerPixelNormal: 1
+    - _HeightTransition: 0
+    - _ReceivesSSR: 1
+    - _SpecularOcclusionMode: 1
+    - _StencilRef: 0
+    - _StencilRefDepth: 0
+    - _StencilRefGBuffer: 2
+    - _StencilWriteMask: 3
+    - _StencilWriteMaskDepth: 8
+    - _StencilWriteMaskGBuffer: 3
+    - _SupportDecals: 1
+    - _TransparentZWrite: 0
+    - _ZTestDepthEqualForOpaque: 4
+    - _ZTestGBuffer: 4
+    - _ZWrite: 1
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1 &380007635
 GameObject:
   m_ObjectHideFlags: 0
@@ -225,6 +460,7 @@ GameObject:
   - component: {fileID: 380007638}
   - component: {fileID: 380007637}
   - component: {fileID: 380007636}
+  - component: {fileID: 380007639}
   m_Layer: 0
   m_Name: Terrain_(-100.00, 0.00, -200.00)
   m_TagString: Untagged
@@ -305,6 +541,185 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &380007639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 380007635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c503e08679b9d8d408f0a3e55874ae93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 0}
+  guiOpenObjectSelector: 0
+  guiTiles: 1
+  tiles:
+    allowMove: 1
+    generateInfinite: 1
+    generateRange: 2
+    retainMargin: 1
+    genAroundMainCam: 1
+    genAroundObjsTag: 0
+    genAroundTag: 
+    serializedTiles: []
+    serializedCoords: []
+    customTiles: []
+    serializedPinnedCoords: []
+  tileSize:
+    x: 1000
+    z: 1000
+  previewCoord:
+    x: 0
+    z: 0
+  previewAssigned: 0
+  tileResolution: 513
+  tileMargins: 16
+  draftsInEditor: 1
+  draftsInPlaymode: 1
+  draftResolution: 65
+  draftMargins: 2
+  guiLocks: 0
+  locks: []
+  guiInfiniteTerrains: 0
+  hideFarTerrains: 1
+  mainRange: 1
+  clearOnNodeRemove: 1
+  terrainSettings:
+    allowAutoConnect: 1
+    groupingID: 0
+    baseMapDist: 1000
+    showBaseMap: 1
+    baseMapResolution: 1024
+    drawInstanced: 1
+    pixelError: 1
+    shadowCastingMode: 0
+    reflectionProbeUsage: 1
+    editorRenderFlags: 7
+    heightmapMaximumLOD: 0
+    material: {fileID: 738730166}
+    detailDraw: 1
+    detailDistance: 80
+    detailDensity: 1
+    treeDistance: 1000
+    treeBillboardStart: 200
+    treeFadeLength: 5
+    treeFullLod: 150
+    treeLODBiasMultiplier: 1
+    bakeLightProbesForTrees: 0
+    deringLightProbesForTrees: 1
+    preserveTreePrototypeLayers: 0
+    windSpeed: 0.5
+    windSize: 0.5
+    windBending: 0.5
+    grassTint: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    guiCopy: 0
+    copyLayersTags: 1
+    copyComponents: 0
+  globals:
+    height: 250
+    heightInterpolation: 0
+    heightSplit: 129
+    heightMainApply: 2
+    heightDraftApply: 0
+    grassResDownscale: 1
+    grassResPerPatch: 16
+    grassScatterMode: 1
+    objectsNumPerFrame: 500
+    holesRes: 64
+    customControlTextureNames:
+    - _ControlTexture1
+    ctsProfile: {fileID: 0}
+    microSplatPropData: {fileID: 0}
+    microSplatTerrainDescriptor: 0
+    microSplatApplyType: 0
+    useCustomControlTextures: 0
+    microSplatNormals: 0
+    megaSplatTexList: {fileID: 0}
+    vegetationPackage: {fileID: 0}
+    assignComponent: 0
+    vegetationSystem: {fileID: 0}
+    vegetationSystemCopy: 1
+    sourceMultiPackageVsProTagName: 
+  guiSettings: 0
+  guiTileSettings: 0
+  guiOutputsSettings: 0
+  guiExposedVariables: 0
+  guiTerrainSettings: 0
+  guiDraftSettings: 0
+  guiTreesGrassSettings: 0
+  instantGenerate: 1
+  saveIntermediate: 1
+  heightWeldMargins: 5
+  splatsWeldMargins: 2
+  guiHideWireframe: 0
+  guiThreads: 0
+  applyColliders: 1
+  setDirty: 0
+  shift: 0
+  shiftThreshold: 4000
+  shiftExcludeLayers: 0
+  serializedMultithreading: 1
+  serializedMaxThreads: 3
+  serializedAutoMaxThreads: 1
+  serializedMaxApplyTime: 3
+--- !u!21 &450093118
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: HDRP/TerrainLit
+  m_Shader: {fileID: 4800000, guid: eb607f5e8fc16e140b732f33d26c8c31, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TerrainHolesTexture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _AddPrecomputedVelocity: 0
+    - _CullMode: 2
+    - _EnableHeightBlend: 0
+    - _EnableInstancedPerPixelNormal: 1
+    - _HeightTransition: 0
+    - _ReceivesSSR: 1
+    - _SpecularOcclusionMode: 1
+    - _StencilRef: 0
+    - _StencilRefDepth: 0
+    - _StencilRefGBuffer: 2
+    - _StencilWriteMask: 3
+    - _StencilWriteMaskDepth: 8
+    - _StencilWriteMaskGBuffer: 3
+    - _SupportDecals: 1
+    - _TransparentZWrite: 0
+    - _ZTestDepthEqualForOpaque: 4
+    - _ZTestGBuffer: 4
+    - _ZWrite: 1
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1 &504135514
 GameObject:
   m_ObjectHideFlags: 0
@@ -527,6 +942,61 @@ MonoBehaviour:
       enableFptlForForwardOpaque: 0
       enableBigTilePrepass: 0
       isFptlEnabled: 0
+--- !u!21 &528235523
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: HDRP/TerrainLit
+  m_Shader: {fileID: 4800000, guid: eb607f5e8fc16e140b732f33d26c8c31, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TerrainHolesTexture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _AddPrecomputedVelocity: 0
+    - _CullMode: 2
+    - _EnableHeightBlend: 0
+    - _EnableInstancedPerPixelNormal: 1
+    - _HeightTransition: 0
+    - _ReceivesSSR: 1
+    - _SpecularOcclusionMode: 1
+    - _StencilRef: 0
+    - _StencilRefDepth: 0
+    - _StencilRefGBuffer: 2
+    - _StencilWriteMask: 3
+    - _StencilWriteMaskDepth: 8
+    - _StencilWriteMaskGBuffer: 3
+    - _SupportDecals: 1
+    - _TransparentZWrite: 0
+    - _ZTestDepthEqualForOpaque: 4
+    - _ZTestGBuffer: 4
+    - _ZWrite: 1
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1 &591290624
 GameObject:
   m_ObjectHideFlags: 0
@@ -538,6 +1008,7 @@ GameObject:
   - component: {fileID: 591290627}
   - component: {fileID: 591290626}
   - component: {fileID: 591290625}
+  - component: {fileID: 591290628}
   m_Layer: 0
   m_Name: Terrain_(-100.00, 0.00, -300.00)
   m_TagString: Untagged
@@ -618,6 +1089,185 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &591290628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 591290624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c503e08679b9d8d408f0a3e55874ae93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 0}
+  guiOpenObjectSelector: 0
+  guiTiles: 1
+  tiles:
+    allowMove: 1
+    generateInfinite: 1
+    generateRange: 2
+    retainMargin: 1
+    genAroundMainCam: 1
+    genAroundObjsTag: 0
+    genAroundTag: 
+    serializedTiles: []
+    serializedCoords: []
+    customTiles: []
+    serializedPinnedCoords: []
+  tileSize:
+    x: 1000
+    z: 1000
+  previewCoord:
+    x: 0
+    z: 0
+  previewAssigned: 0
+  tileResolution: 513
+  tileMargins: 16
+  draftsInEditor: 1
+  draftsInPlaymode: 1
+  draftResolution: 65
+  draftMargins: 2
+  guiLocks: 0
+  locks: []
+  guiInfiniteTerrains: 0
+  hideFarTerrains: 1
+  mainRange: 1
+  clearOnNodeRemove: 1
+  terrainSettings:
+    allowAutoConnect: 1
+    groupingID: 0
+    baseMapDist: 1000
+    showBaseMap: 1
+    baseMapResolution: 1024
+    drawInstanced: 1
+    pixelError: 1
+    shadowCastingMode: 0
+    reflectionProbeUsage: 1
+    editorRenderFlags: 7
+    heightmapMaximumLOD: 0
+    material: {fileID: 528235523}
+    detailDraw: 1
+    detailDistance: 80
+    detailDensity: 1
+    treeDistance: 1000
+    treeBillboardStart: 200
+    treeFadeLength: 5
+    treeFullLod: 150
+    treeLODBiasMultiplier: 1
+    bakeLightProbesForTrees: 0
+    deringLightProbesForTrees: 1
+    preserveTreePrototypeLayers: 0
+    windSpeed: 0.5
+    windSize: 0.5
+    windBending: 0.5
+    grassTint: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    guiCopy: 0
+    copyLayersTags: 1
+    copyComponents: 0
+  globals:
+    height: 250
+    heightInterpolation: 0
+    heightSplit: 129
+    heightMainApply: 2
+    heightDraftApply: 0
+    grassResDownscale: 1
+    grassResPerPatch: 16
+    grassScatterMode: 1
+    objectsNumPerFrame: 500
+    holesRes: 64
+    customControlTextureNames:
+    - _ControlTexture1
+    ctsProfile: {fileID: 0}
+    microSplatPropData: {fileID: 0}
+    microSplatTerrainDescriptor: 0
+    microSplatApplyType: 0
+    useCustomControlTextures: 0
+    microSplatNormals: 0
+    megaSplatTexList: {fileID: 0}
+    vegetationPackage: {fileID: 0}
+    assignComponent: 0
+    vegetationSystem: {fileID: 0}
+    vegetationSystemCopy: 1
+    sourceMultiPackageVsProTagName: 
+  guiSettings: 0
+  guiTileSettings: 0
+  guiOutputsSettings: 0
+  guiExposedVariables: 0
+  guiTerrainSettings: 0
+  guiDraftSettings: 0
+  guiTreesGrassSettings: 0
+  instantGenerate: 1
+  saveIntermediate: 1
+  heightWeldMargins: 5
+  splatsWeldMargins: 2
+  guiHideWireframe: 0
+  guiThreads: 0
+  applyColliders: 1
+  setDirty: 0
+  shift: 0
+  shiftThreshold: 4000
+  shiftExcludeLayers: 0
+  serializedMultithreading: 1
+  serializedMaxThreads: 3
+  serializedAutoMaxThreads: 1
+  serializedMaxApplyTime: 3
+--- !u!21 &594445396
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: HDRP/TerrainLit
+  m_Shader: {fileID: 4800000, guid: eb607f5e8fc16e140b732f33d26c8c31, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TerrainHolesTexture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _AddPrecomputedVelocity: 0
+    - _CullMode: 2
+    - _EnableHeightBlend: 0
+    - _EnableInstancedPerPixelNormal: 1
+    - _HeightTransition: 0
+    - _ReceivesSSR: 1
+    - _SpecularOcclusionMode: 1
+    - _StencilRef: 0
+    - _StencilRefDepth: 0
+    - _StencilRefGBuffer: 2
+    - _StencilWriteMask: 3
+    - _StencilWriteMaskDepth: 8
+    - _StencilWriteMaskGBuffer: 3
+    - _SupportDecals: 1
+    - _TransparentZWrite: 0
+    - _ZTestDepthEqualForOpaque: 4
+    - _ZTestGBuffer: 4
+    - _ZWrite: 1
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1 &693417747
 GameObject:
   m_ObjectHideFlags: 0
@@ -629,6 +1279,7 @@ GameObject:
   - component: {fileID: 693417750}
   - component: {fileID: 693417749}
   - component: {fileID: 693417748}
+  - component: {fileID: 693417751}
   m_Layer: 0
   m_Name: Terrain
   m_TagString: Untagged
@@ -709,6 +1360,240 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &693417751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 693417747}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c503e08679b9d8d408f0a3e55874ae93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000, guid: fa6422632cb7b1f4ab4fce1030150e47, type: 2}
+  guiOpenObjectSelector: 0
+  guiTiles: 1
+  tiles:
+    allowMove: 1
+    generateInfinite: 1
+    generateRange: 2
+    retainMargin: 1
+    genAroundMainCam: 1
+    genAroundObjsTag: 0
+    genAroundTag: 
+    serializedTiles: []
+    serializedCoords: []
+    customTiles: []
+    serializedPinnedCoords: []
+  tileSize:
+    x: 1000
+    z: 1000
+  previewCoord:
+    x: 0
+    z: 0
+  previewAssigned: 0
+  tileResolution: 513
+  tileMargins: 16
+  draftsInEditor: 1
+  draftsInPlaymode: 1
+  draftResolution: 65
+  draftMargins: 2
+  guiLocks: 0
+  locks: []
+  guiInfiniteTerrains: 0
+  hideFarTerrains: 1
+  mainRange: 1
+  clearOnNodeRemove: 1
+  terrainSettings:
+    allowAutoConnect: 1
+    groupingID: 0
+    baseMapDist: 1000
+    showBaseMap: 1
+    baseMapResolution: 1024
+    drawInstanced: 1
+    pixelError: 1
+    shadowCastingMode: 0
+    reflectionProbeUsage: 1
+    editorRenderFlags: 7
+    heightmapMaximumLOD: 0
+    material: {fileID: 1212310022}
+    detailDraw: 1
+    detailDistance: 80
+    detailDensity: 1
+    treeDistance: 1000
+    treeBillboardStart: 200
+    treeFadeLength: 5
+    treeFullLod: 150
+    treeLODBiasMultiplier: 1
+    bakeLightProbesForTrees: 0
+    deringLightProbesForTrees: 1
+    preserveTreePrototypeLayers: 0
+    windSpeed: 0.5
+    windSize: 0.5
+    windBending: 0.5
+    grassTint: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    guiCopy: 0
+    copyLayersTags: 1
+    copyComponents: 0
+  globals:
+    height: 250
+    heightInterpolation: 0
+    heightSplit: 129
+    heightMainApply: 2
+    heightDraftApply: 0
+    grassResDownscale: 1
+    grassResPerPatch: 16
+    grassScatterMode: 1
+    objectsNumPerFrame: 500
+    holesRes: 64
+    customControlTextureNames:
+    - _ControlTexture1
+    ctsProfile: {fileID: 0}
+    microSplatPropData: {fileID: 0}
+    microSplatTerrainDescriptor: 0
+    microSplatApplyType: 0
+    useCustomControlTextures: 0
+    microSplatNormals: 0
+    megaSplatTexList: {fileID: 0}
+    vegetationPackage: {fileID: 0}
+    assignComponent: 0
+    vegetationSystem: {fileID: 0}
+    vegetationSystemCopy: 1
+    sourceMultiPackageVsProTagName: 
+  guiSettings: 0
+  guiTileSettings: 0
+  guiOutputsSettings: 0
+  guiExposedVariables: 0
+  guiTerrainSettings: 0
+  guiDraftSettings: 0
+  guiTreesGrassSettings: 0
+  instantGenerate: 1
+  saveIntermediate: 1
+  heightWeldMargins: 5
+  splatsWeldMargins: 2
+  guiHideWireframe: 0
+  guiThreads: 0
+  applyColliders: 1
+  setDirty: 0
+  shift: 0
+  shiftThreshold: 4000
+  shiftExcludeLayers: 0
+  serializedMultithreading: 1
+  serializedMaxThreads: 3
+  serializedAutoMaxThreads: 1
+  serializedMaxApplyTime: 3
+--- !u!21 &738730166
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: HDRP/TerrainLit
+  m_Shader: {fileID: 4800000, guid: eb607f5e8fc16e140b732f33d26c8c31, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TerrainHolesTexture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _AddPrecomputedVelocity: 0
+    - _CullMode: 2
+    - _EnableHeightBlend: 0
+    - _EnableInstancedPerPixelNormal: 1
+    - _HeightTransition: 0
+    - _ReceivesSSR: 1
+    - _SpecularOcclusionMode: 1
+    - _StencilRef: 0
+    - _StencilRefDepth: 0
+    - _StencilRefGBuffer: 2
+    - _StencilWriteMask: 3
+    - _StencilWriteMaskDepth: 8
+    - _StencilWriteMaskGBuffer: 3
+    - _SupportDecals: 1
+    - _TransparentZWrite: 0
+    - _ZTestDepthEqualForOpaque: 4
+    - _ZTestGBuffer: 4
+    - _ZWrite: 1
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
+--- !u!21 &926985560
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: HDRP/TerrainLit
+  m_Shader: {fileID: 4800000, guid: eb607f5e8fc16e140b732f33d26c8c31, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TerrainHolesTexture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _AddPrecomputedVelocity: 0
+    - _CullMode: 2
+    - _EnableHeightBlend: 0
+    - _EnableInstancedPerPixelNormal: 1
+    - _HeightTransition: 0
+    - _ReceivesSSR: 1
+    - _SpecularOcclusionMode: 1
+    - _StencilRef: 0
+    - _StencilRefDepth: 0
+    - _StencilRefGBuffer: 2
+    - _StencilWriteMask: 3
+    - _StencilWriteMaskDepth: 8
+    - _StencilWriteMaskGBuffer: 3
+    - _SupportDecals: 1
+    - _TransparentZWrite: 0
+    - _ZTestDepthEqualForOpaque: 4
+    - _ZTestGBuffer: 4
+    - _ZWrite: 1
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1 &939888113
 GameObject:
   m_ObjectHideFlags: 0
@@ -720,6 +1605,7 @@ GameObject:
   - component: {fileID: 939888116}
   - component: {fileID: 939888115}
   - component: {fileID: 939888114}
+  - component: {fileID: 939888117}
   m_Layer: 0
   m_Name: Terrain_(0.00, 0.00, -500.00)
   m_TagString: Untagged
@@ -800,6 +1686,130 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &939888117
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 939888113}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c503e08679b9d8d408f0a3e55874ae93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 0}
+  guiOpenObjectSelector: 0
+  guiTiles: 1
+  tiles:
+    allowMove: 1
+    generateInfinite: 1
+    generateRange: 2
+    retainMargin: 1
+    genAroundMainCam: 1
+    genAroundObjsTag: 0
+    genAroundTag: 
+    serializedTiles: []
+    serializedCoords: []
+    customTiles: []
+    serializedPinnedCoords: []
+  tileSize:
+    x: 1000
+    z: 1000
+  previewCoord:
+    x: 0
+    z: 0
+  previewAssigned: 0
+  tileResolution: 513
+  tileMargins: 16
+  draftsInEditor: 1
+  draftsInPlaymode: 1
+  draftResolution: 65
+  draftMargins: 2
+  guiLocks: 0
+  locks: []
+  guiInfiniteTerrains: 0
+  hideFarTerrains: 1
+  mainRange: 1
+  clearOnNodeRemove: 1
+  terrainSettings:
+    allowAutoConnect: 1
+    groupingID: 0
+    baseMapDist: 1000
+    showBaseMap: 1
+    baseMapResolution: 1024
+    drawInstanced: 1
+    pixelError: 1
+    shadowCastingMode: 0
+    reflectionProbeUsage: 1
+    editorRenderFlags: 7
+    heightmapMaximumLOD: 0
+    material: {fileID: 926985560}
+    detailDraw: 1
+    detailDistance: 80
+    detailDensity: 1
+    treeDistance: 1000
+    treeBillboardStart: 200
+    treeFadeLength: 5
+    treeFullLod: 150
+    treeLODBiasMultiplier: 1
+    bakeLightProbesForTrees: 0
+    deringLightProbesForTrees: 1
+    preserveTreePrototypeLayers: 0
+    windSpeed: 0.5
+    windSize: 0.5
+    windBending: 0.5
+    grassTint: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    guiCopy: 0
+    copyLayersTags: 1
+    copyComponents: 0
+  globals:
+    height: 250
+    heightInterpolation: 0
+    heightSplit: 129
+    heightMainApply: 2
+    heightDraftApply: 0
+    grassResDownscale: 1
+    grassResPerPatch: 16
+    grassScatterMode: 1
+    objectsNumPerFrame: 500
+    holesRes: 64
+    customControlTextureNames:
+    - _ControlTexture1
+    ctsProfile: {fileID: 0}
+    microSplatPropData: {fileID: 0}
+    microSplatTerrainDescriptor: 0
+    microSplatApplyType: 0
+    useCustomControlTextures: 0
+    microSplatNormals: 0
+    megaSplatTexList: {fileID: 0}
+    vegetationPackage: {fileID: 0}
+    assignComponent: 0
+    vegetationSystem: {fileID: 0}
+    vegetationSystemCopy: 1
+    sourceMultiPackageVsProTagName: 
+  guiSettings: 0
+  guiTileSettings: 0
+  guiOutputsSettings: 0
+  guiExposedVariables: 0
+  guiTerrainSettings: 0
+  guiDraftSettings: 0
+  guiTreesGrassSettings: 0
+  instantGenerate: 1
+  saveIntermediate: 1
+  heightWeldMargins: 5
+  splatsWeldMargins: 2
+  guiHideWireframe: 0
+  guiThreads: 0
+  applyColliders: 1
+  setDirty: 0
+  shift: 0
+  shiftThreshold: 4000
+  shiftExcludeLayers: 0
+  serializedMultithreading: 1
+  serializedMaxThreads: 3
+  serializedAutoMaxThreads: 1
+  serializedMaxApplyTime: 3
 --- !u!1001 &1007921165
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -871,8 +1881,142 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 28a620124011b9f4d9a94c07dced4e7d,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1007921167}
   m_SourcePrefab: {fileID: 100100000, guid: 28a620124011b9f4d9a94c07dced4e7d, type: 3}
+--- !u!1 &1007921166 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 28a620124011b9f4d9a94c07dced4e7d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1007921165}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1007921167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1007921166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c503e08679b9d8d408f0a3e55874ae93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 0}
+  guiOpenObjectSelector: 0
+  guiTiles: 1
+  tiles:
+    allowMove: 1
+    generateInfinite: 1
+    generateRange: 2
+    retainMargin: 1
+    genAroundMainCam: 1
+    genAroundObjsTag: 0
+    genAroundTag: 
+    serializedTiles: []
+    serializedCoords: []
+    customTiles: []
+    serializedPinnedCoords: []
+  tileSize:
+    x: 1000
+    z: 1000
+  previewCoord:
+    x: 0
+    z: 0
+  previewAssigned: 0
+  tileResolution: 513
+  tileMargins: 16
+  draftsInEditor: 1
+  draftsInPlaymode: 1
+  draftResolution: 65
+  draftMargins: 2
+  guiLocks: 0
+  locks: []
+  guiInfiniteTerrains: 0
+  hideFarTerrains: 1
+  mainRange: 1
+  clearOnNodeRemove: 1
+  terrainSettings:
+    allowAutoConnect: 1
+    groupingID: 0
+    baseMapDist: 1000
+    showBaseMap: 1
+    baseMapResolution: 1024
+    drawInstanced: 1
+    pixelError: 1
+    shadowCastingMode: 0
+    reflectionProbeUsage: 1
+    editorRenderFlags: 7
+    heightmapMaximumLOD: 0
+    material: {fileID: 1995929653}
+    detailDraw: 1
+    detailDistance: 80
+    detailDensity: 1
+    treeDistance: 1000
+    treeBillboardStart: 200
+    treeFadeLength: 5
+    treeFullLod: 150
+    treeLODBiasMultiplier: 1
+    bakeLightProbesForTrees: 0
+    deringLightProbesForTrees: 1
+    preserveTreePrototypeLayers: 0
+    windSpeed: 0.5
+    windSize: 0.5
+    windBending: 0.5
+    grassTint: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    guiCopy: 0
+    copyLayersTags: 1
+    copyComponents: 0
+  globals:
+    height: 250
+    heightInterpolation: 0
+    heightSplit: 129
+    heightMainApply: 2
+    heightDraftApply: 0
+    grassResDownscale: 1
+    grassResPerPatch: 16
+    grassScatterMode: 1
+    objectsNumPerFrame: 500
+    holesRes: 64
+    customControlTextureNames:
+    - _ControlTexture1
+    ctsProfile: {fileID: 0}
+    microSplatPropData: {fileID: 0}
+    microSplatTerrainDescriptor: 0
+    microSplatApplyType: 0
+    useCustomControlTextures: 0
+    microSplatNormals: 0
+    megaSplatTexList: {fileID: 0}
+    vegetationPackage: {fileID: 0}
+    assignComponent: 0
+    vegetationSystem: {fileID: 0}
+    vegetationSystemCopy: 1
+    sourceMultiPackageVsProTagName: 
+  guiSettings: 0
+  guiTileSettings: 0
+  guiOutputsSettings: 0
+  guiExposedVariables: 0
+  guiTerrainSettings: 0
+  guiDraftSettings: 0
+  guiTreesGrassSettings: 0
+  instantGenerate: 1
+  saveIntermediate: 1
+  heightWeldMargins: 5
+  splatsWeldMargins: 2
+  guiHideWireframe: 0
+  guiThreads: 0
+  applyColliders: 1
+  setDirty: 0
+  shift: 0
+  shiftThreshold: 4000
+  shiftExcludeLayers: 0
+  serializedMultithreading: 1
+  serializedMaxThreads: 3
+  serializedAutoMaxThreads: 1
+  serializedMaxApplyTime: 3
 --- !u!1 &1071325720
 GameObject:
   m_ObjectHideFlags: 0
@@ -884,6 +2028,7 @@ GameObject:
   - component: {fileID: 1071325723}
   - component: {fileID: 1071325722}
   - component: {fileID: 1071325721}
+  - component: {fileID: 1071325724}
   m_Layer: 0
   m_Name: Terrain_(0.00, 0.00, -300.00)
   m_TagString: Untagged
@@ -964,6 +2109,130 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1071325724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1071325720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c503e08679b9d8d408f0a3e55874ae93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 0}
+  guiOpenObjectSelector: 0
+  guiTiles: 1
+  tiles:
+    allowMove: 1
+    generateInfinite: 1
+    generateRange: 2
+    retainMargin: 1
+    genAroundMainCam: 1
+    genAroundObjsTag: 0
+    genAroundTag: 
+    serializedTiles: []
+    serializedCoords: []
+    customTiles: []
+    serializedPinnedCoords: []
+  tileSize:
+    x: 1000
+    z: 1000
+  previewCoord:
+    x: 0
+    z: 0
+  previewAssigned: 0
+  tileResolution: 513
+  tileMargins: 16
+  draftsInEditor: 1
+  draftsInPlaymode: 1
+  draftResolution: 65
+  draftMargins: 2
+  guiLocks: 0
+  locks: []
+  guiInfiniteTerrains: 0
+  hideFarTerrains: 1
+  mainRange: 1
+  clearOnNodeRemove: 1
+  terrainSettings:
+    allowAutoConnect: 1
+    groupingID: 0
+    baseMapDist: 1000
+    showBaseMap: 1
+    baseMapResolution: 1024
+    drawInstanced: 1
+    pixelError: 1
+    shadowCastingMode: 0
+    reflectionProbeUsage: 1
+    editorRenderFlags: 7
+    heightmapMaximumLOD: 0
+    material: {fileID: 337117757}
+    detailDraw: 1
+    detailDistance: 80
+    detailDensity: 1
+    treeDistance: 1000
+    treeBillboardStart: 200
+    treeFadeLength: 5
+    treeFullLod: 150
+    treeLODBiasMultiplier: 1
+    bakeLightProbesForTrees: 0
+    deringLightProbesForTrees: 1
+    preserveTreePrototypeLayers: 0
+    windSpeed: 0.5
+    windSize: 0.5
+    windBending: 0.5
+    grassTint: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    guiCopy: 0
+    copyLayersTags: 1
+    copyComponents: 0
+  globals:
+    height: 250
+    heightInterpolation: 0
+    heightSplit: 129
+    heightMainApply: 2
+    heightDraftApply: 0
+    grassResDownscale: 1
+    grassResPerPatch: 16
+    grassScatterMode: 1
+    objectsNumPerFrame: 500
+    holesRes: 64
+    customControlTextureNames:
+    - _ControlTexture1
+    ctsProfile: {fileID: 0}
+    microSplatPropData: {fileID: 0}
+    microSplatTerrainDescriptor: 0
+    microSplatApplyType: 0
+    useCustomControlTextures: 0
+    microSplatNormals: 0
+    megaSplatTexList: {fileID: 0}
+    vegetationPackage: {fileID: 0}
+    assignComponent: 0
+    vegetationSystem: {fileID: 0}
+    vegetationSystemCopy: 1
+    sourceMultiPackageVsProTagName: 
+  guiSettings: 0
+  guiTileSettings: 0
+  guiOutputsSettings: 0
+  guiExposedVariables: 0
+  guiTerrainSettings: 0
+  guiDraftSettings: 0
+  guiTreesGrassSettings: 0
+  instantGenerate: 1
+  saveIntermediate: 1
+  heightWeldMargins: 5
+  splatsWeldMargins: 2
+  guiHideWireframe: 0
+  guiThreads: 0
+  applyColliders: 1
+  setDirty: 0
+  shift: 0
+  shiftThreshold: 4000
+  shiftExcludeLayers: 0
+  serializedMultithreading: 1
+  serializedMaxThreads: 3
+  serializedAutoMaxThreads: 1
+  serializedMaxApplyTime: 3
 --- !u!1 &1095476817
 GameObject:
   m_ObjectHideFlags: 0
@@ -975,6 +2244,7 @@ GameObject:
   - component: {fileID: 1095476820}
   - component: {fileID: 1095476819}
   - component: {fileID: 1095476818}
+  - component: {fileID: 1095476821}
   m_Layer: 0
   m_Name: Terrain_(0.00, 0.00, -400.00)
   m_TagString: Untagged
@@ -1055,6 +2325,185 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1095476821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1095476817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c503e08679b9d8d408f0a3e55874ae93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 0}
+  guiOpenObjectSelector: 0
+  guiTiles: 1
+  tiles:
+    allowMove: 1
+    generateInfinite: 1
+    generateRange: 2
+    retainMargin: 1
+    genAroundMainCam: 1
+    genAroundObjsTag: 0
+    genAroundTag: 
+    serializedTiles: []
+    serializedCoords: []
+    customTiles: []
+    serializedPinnedCoords: []
+  tileSize:
+    x: 1000
+    z: 1000
+  previewCoord:
+    x: 0
+    z: 0
+  previewAssigned: 0
+  tileResolution: 513
+  tileMargins: 16
+  draftsInEditor: 1
+  draftsInPlaymode: 1
+  draftResolution: 65
+  draftMargins: 2
+  guiLocks: 0
+  locks: []
+  guiInfiniteTerrains: 0
+  hideFarTerrains: 1
+  mainRange: 1
+  clearOnNodeRemove: 1
+  terrainSettings:
+    allowAutoConnect: 1
+    groupingID: 0
+    baseMapDist: 1000
+    showBaseMap: 1
+    baseMapResolution: 1024
+    drawInstanced: 1
+    pixelError: 1
+    shadowCastingMode: 0
+    reflectionProbeUsage: 1
+    editorRenderFlags: 7
+    heightmapMaximumLOD: 0
+    material: {fileID: 1362840195}
+    detailDraw: 1
+    detailDistance: 80
+    detailDensity: 1
+    treeDistance: 1000
+    treeBillboardStart: 200
+    treeFadeLength: 5
+    treeFullLod: 150
+    treeLODBiasMultiplier: 1
+    bakeLightProbesForTrees: 0
+    deringLightProbesForTrees: 1
+    preserveTreePrototypeLayers: 0
+    windSpeed: 0.5
+    windSize: 0.5
+    windBending: 0.5
+    grassTint: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    guiCopy: 0
+    copyLayersTags: 1
+    copyComponents: 0
+  globals:
+    height: 250
+    heightInterpolation: 0
+    heightSplit: 129
+    heightMainApply: 2
+    heightDraftApply: 0
+    grassResDownscale: 1
+    grassResPerPatch: 16
+    grassScatterMode: 1
+    objectsNumPerFrame: 500
+    holesRes: 64
+    customControlTextureNames:
+    - _ControlTexture1
+    ctsProfile: {fileID: 0}
+    microSplatPropData: {fileID: 0}
+    microSplatTerrainDescriptor: 0
+    microSplatApplyType: 0
+    useCustomControlTextures: 0
+    microSplatNormals: 0
+    megaSplatTexList: {fileID: 0}
+    vegetationPackage: {fileID: 0}
+    assignComponent: 0
+    vegetationSystem: {fileID: 0}
+    vegetationSystemCopy: 1
+    sourceMultiPackageVsProTagName: 
+  guiSettings: 0
+  guiTileSettings: 0
+  guiOutputsSettings: 0
+  guiExposedVariables: 0
+  guiTerrainSettings: 0
+  guiDraftSettings: 0
+  guiTreesGrassSettings: 0
+  instantGenerate: 1
+  saveIntermediate: 1
+  heightWeldMargins: 5
+  splatsWeldMargins: 2
+  guiHideWireframe: 0
+  guiThreads: 0
+  applyColliders: 1
+  setDirty: 0
+  shift: 0
+  shiftThreshold: 4000
+  shiftExcludeLayers: 0
+  serializedMultithreading: 1
+  serializedMaxThreads: 3
+  serializedAutoMaxThreads: 1
+  serializedMaxApplyTime: 3
+--- !u!21 &1212310022
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: HDRP/TerrainLit
+  m_Shader: {fileID: 4800000, guid: eb607f5e8fc16e140b732f33d26c8c31, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TerrainHolesTexture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _AddPrecomputedVelocity: 0
+    - _CullMode: 2
+    - _EnableHeightBlend: 0
+    - _EnableInstancedPerPixelNormal: 1
+    - _HeightTransition: 0
+    - _ReceivesSSR: 1
+    - _SpecularOcclusionMode: 1
+    - _StencilRef: 0
+    - _StencilRefDepth: 0
+    - _StencilRefGBuffer: 2
+    - _StencilWriteMask: 3
+    - _StencilWriteMaskDepth: 8
+    - _StencilWriteMaskGBuffer: 3
+    - _SupportDecals: 1
+    - _TransparentZWrite: 0
+    - _ZTestDepthEqualForOpaque: 4
+    - _ZTestGBuffer: 4
+    - _ZWrite: 1
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1 &1230423398
 GameObject:
   m_ObjectHideFlags: 0
@@ -1272,6 +2721,61 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!21 &1257259064
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: HDRP/TerrainLit
+  m_Shader: {fileID: 4800000, guid: eb607f5e8fc16e140b732f33d26c8c31, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TerrainHolesTexture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _AddPrecomputedVelocity: 0
+    - _CullMode: 2
+    - _EnableHeightBlend: 0
+    - _EnableInstancedPerPixelNormal: 1
+    - _HeightTransition: 0
+    - _ReceivesSSR: 1
+    - _SpecularOcclusionMode: 1
+    - _StencilRef: 0
+    - _StencilRefDepth: 0
+    - _StencilRefGBuffer: 2
+    - _StencilWriteMask: 3
+    - _StencilWriteMaskDepth: 8
+    - _StencilWriteMaskGBuffer: 3
+    - _SupportDecals: 1
+    - _TransparentZWrite: 0
+    - _ZTestDepthEqualForOpaque: 4
+    - _ZTestGBuffer: 4
+    - _ZWrite: 1
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1 &1270032581
 GameObject:
   m_ObjectHideFlags: 0
@@ -1283,6 +2787,7 @@ GameObject:
   - component: {fileID: 1270032584}
   - component: {fileID: 1270032583}
   - component: {fileID: 1270032582}
+  - component: {fileID: 1270032585}
   m_Layer: 0
   m_Name: Terrain_(100.00, 0.00, -100.00)
   m_TagString: Untagged
@@ -1363,6 +2868,295 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1270032585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1270032581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c503e08679b9d8d408f0a3e55874ae93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 0}
+  guiOpenObjectSelector: 0
+  guiTiles: 1
+  tiles:
+    allowMove: 1
+    generateInfinite: 1
+    generateRange: 2
+    retainMargin: 1
+    genAroundMainCam: 1
+    genAroundObjsTag: 0
+    genAroundTag: 
+    serializedTiles: []
+    serializedCoords: []
+    customTiles: []
+    serializedPinnedCoords: []
+  tileSize:
+    x: 1000
+    z: 1000
+  previewCoord:
+    x: 0
+    z: 0
+  previewAssigned: 0
+  tileResolution: 513
+  tileMargins: 16
+  draftsInEditor: 1
+  draftsInPlaymode: 1
+  draftResolution: 65
+  draftMargins: 2
+  guiLocks: 0
+  locks: []
+  guiInfiniteTerrains: 0
+  hideFarTerrains: 1
+  mainRange: 1
+  clearOnNodeRemove: 1
+  terrainSettings:
+    allowAutoConnect: 1
+    groupingID: 0
+    baseMapDist: 1000
+    showBaseMap: 1
+    baseMapResolution: 1024
+    drawInstanced: 1
+    pixelError: 1
+    shadowCastingMode: 0
+    reflectionProbeUsage: 1
+    editorRenderFlags: 7
+    heightmapMaximumLOD: 0
+    material: {fileID: 594445396}
+    detailDraw: 1
+    detailDistance: 80
+    detailDensity: 1
+    treeDistance: 1000
+    treeBillboardStart: 200
+    treeFadeLength: 5
+    treeFullLod: 150
+    treeLODBiasMultiplier: 1
+    bakeLightProbesForTrees: 0
+    deringLightProbesForTrees: 1
+    preserveTreePrototypeLayers: 0
+    windSpeed: 0.5
+    windSize: 0.5
+    windBending: 0.5
+    grassTint: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    guiCopy: 0
+    copyLayersTags: 1
+    copyComponents: 0
+  globals:
+    height: 250
+    heightInterpolation: 0
+    heightSplit: 129
+    heightMainApply: 2
+    heightDraftApply: 0
+    grassResDownscale: 1
+    grassResPerPatch: 16
+    grassScatterMode: 1
+    objectsNumPerFrame: 500
+    holesRes: 64
+    customControlTextureNames:
+    - _ControlTexture1
+    ctsProfile: {fileID: 0}
+    microSplatPropData: {fileID: 0}
+    microSplatTerrainDescriptor: 0
+    microSplatApplyType: 0
+    useCustomControlTextures: 0
+    microSplatNormals: 0
+    megaSplatTexList: {fileID: 0}
+    vegetationPackage: {fileID: 0}
+    assignComponent: 0
+    vegetationSystem: {fileID: 0}
+    vegetationSystemCopy: 1
+    sourceMultiPackageVsProTagName: 
+  guiSettings: 0
+  guiTileSettings: 0
+  guiOutputsSettings: 0
+  guiExposedVariables: 0
+  guiTerrainSettings: 0
+  guiDraftSettings: 0
+  guiTreesGrassSettings: 0
+  instantGenerate: 1
+  saveIntermediate: 1
+  heightWeldMargins: 5
+  splatsWeldMargins: 2
+  guiHideWireframe: 0
+  guiThreads: 0
+  applyColliders: 1
+  setDirty: 0
+  shift: 0
+  shiftThreshold: 4000
+  shiftExcludeLayers: 0
+  serializedMultithreading: 1
+  serializedMaxThreads: 3
+  serializedAutoMaxThreads: 1
+  serializedMaxApplyTime: 3
+--- !u!21 &1301658010
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: HDRP/TerrainLit
+  m_Shader: {fileID: 4800000, guid: eb607f5e8fc16e140b732f33d26c8c31, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TerrainHolesTexture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _AddPrecomputedVelocity: 0
+    - _CullMode: 2
+    - _EnableHeightBlend: 0
+    - _EnableInstancedPerPixelNormal: 1
+    - _HeightTransition: 0
+    - _ReceivesSSR: 1
+    - _SpecularOcclusionMode: 1
+    - _StencilRef: 0
+    - _StencilRefDepth: 0
+    - _StencilRefGBuffer: 2
+    - _StencilWriteMask: 3
+    - _StencilWriteMaskDepth: 8
+    - _StencilWriteMaskGBuffer: 3
+    - _SupportDecals: 1
+    - _TransparentZWrite: 0
+    - _ZTestDepthEqualForOpaque: 4
+    - _ZTestGBuffer: 4
+    - _ZWrite: 1
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
+--- !u!21 &1309544627
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: HDRP/TerrainLit
+  m_Shader: {fileID: 4800000, guid: eb607f5e8fc16e140b732f33d26c8c31, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TerrainHolesTexture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _AddPrecomputedVelocity: 0
+    - _CullMode: 2
+    - _EnableHeightBlend: 0
+    - _EnableInstancedPerPixelNormal: 1
+    - _HeightTransition: 0
+    - _ReceivesSSR: 1
+    - _SpecularOcclusionMode: 1
+    - _StencilRef: 0
+    - _StencilRefDepth: 0
+    - _StencilRefGBuffer: 2
+    - _StencilWriteMask: 3
+    - _StencilWriteMaskDepth: 8
+    - _StencilWriteMaskGBuffer: 3
+    - _SupportDecals: 1
+    - _TransparentZWrite: 0
+    - _ZTestDepthEqualForOpaque: 4
+    - _ZTestGBuffer: 4
+    - _ZWrite: 1
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
+--- !u!21 &1362840195
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: HDRP/TerrainLit
+  m_Shader: {fileID: 4800000, guid: eb607f5e8fc16e140b732f33d26c8c31, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TerrainHolesTexture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _AddPrecomputedVelocity: 0
+    - _CullMode: 2
+    - _EnableHeightBlend: 0
+    - _EnableInstancedPerPixelNormal: 1
+    - _HeightTransition: 0
+    - _ReceivesSSR: 1
+    - _SpecularOcclusionMode: 1
+    - _StencilRef: 0
+    - _StencilRefDepth: 0
+    - _StencilRefGBuffer: 2
+    - _StencilWriteMask: 3
+    - _StencilWriteMaskDepth: 8
+    - _StencilWriteMaskGBuffer: 3
+    - _SupportDecals: 1
+    - _TransparentZWrite: 0
+    - _ZTestDepthEqualForOpaque: 4
+    - _ZTestGBuffer: 4
+    - _ZWrite: 1
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1 &1469061057
 GameObject:
   m_ObjectHideFlags: 0
@@ -1374,6 +3168,7 @@ GameObject:
   - component: {fileID: 1469061060}
   - component: {fileID: 1469061059}
   - component: {fileID: 1469061058}
+  - component: {fileID: 1469061061}
   m_Layer: 0
   m_Name: Terrain_(100.00, 0.00, -500.00)
   m_TagString: Untagged
@@ -1454,6 +3249,130 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1469061061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1469061057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c503e08679b9d8d408f0a3e55874ae93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 0}
+  guiOpenObjectSelector: 0
+  guiTiles: 1
+  tiles:
+    allowMove: 1
+    generateInfinite: 1
+    generateRange: 2
+    retainMargin: 1
+    genAroundMainCam: 1
+    genAroundObjsTag: 0
+    genAroundTag: 
+    serializedTiles: []
+    serializedCoords: []
+    customTiles: []
+    serializedPinnedCoords: []
+  tileSize:
+    x: 1000
+    z: 1000
+  previewCoord:
+    x: 0
+    z: 0
+  previewAssigned: 0
+  tileResolution: 513
+  tileMargins: 16
+  draftsInEditor: 1
+  draftsInPlaymode: 1
+  draftResolution: 65
+  draftMargins: 2
+  guiLocks: 0
+  locks: []
+  guiInfiniteTerrains: 0
+  hideFarTerrains: 1
+  mainRange: 1
+  clearOnNodeRemove: 1
+  terrainSettings:
+    allowAutoConnect: 1
+    groupingID: 0
+    baseMapDist: 1000
+    showBaseMap: 1
+    baseMapResolution: 1024
+    drawInstanced: 1
+    pixelError: 1
+    shadowCastingMode: 0
+    reflectionProbeUsage: 1
+    editorRenderFlags: 7
+    heightmapMaximumLOD: 0
+    material: {fileID: 184284249}
+    detailDraw: 1
+    detailDistance: 80
+    detailDensity: 1
+    treeDistance: 1000
+    treeBillboardStart: 200
+    treeFadeLength: 5
+    treeFullLod: 150
+    treeLODBiasMultiplier: 1
+    bakeLightProbesForTrees: 0
+    deringLightProbesForTrees: 1
+    preserveTreePrototypeLayers: 0
+    windSpeed: 0.5
+    windSize: 0.5
+    windBending: 0.5
+    grassTint: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    guiCopy: 0
+    copyLayersTags: 1
+    copyComponents: 0
+  globals:
+    height: 250
+    heightInterpolation: 0
+    heightSplit: 129
+    heightMainApply: 2
+    heightDraftApply: 0
+    grassResDownscale: 1
+    grassResPerPatch: 16
+    grassScatterMode: 1
+    objectsNumPerFrame: 500
+    holesRes: 64
+    customControlTextureNames:
+    - _ControlTexture1
+    ctsProfile: {fileID: 0}
+    microSplatPropData: {fileID: 0}
+    microSplatTerrainDescriptor: 0
+    microSplatApplyType: 0
+    useCustomControlTextures: 0
+    microSplatNormals: 0
+    megaSplatTexList: {fileID: 0}
+    vegetationPackage: {fileID: 0}
+    assignComponent: 0
+    vegetationSystem: {fileID: 0}
+    vegetationSystemCopy: 1
+    sourceMultiPackageVsProTagName: 
+  guiSettings: 0
+  guiTileSettings: 0
+  guiOutputsSettings: 0
+  guiExposedVariables: 0
+  guiTerrainSettings: 0
+  guiDraftSettings: 0
+  guiTreesGrassSettings: 0
+  instantGenerate: 1
+  saveIntermediate: 1
+  heightWeldMargins: 5
+  splatsWeldMargins: 2
+  guiHideWireframe: 0
+  guiThreads: 0
+  applyColliders: 1
+  setDirty: 0
+  shift: 0
+  shiftThreshold: 4000
+  shiftExcludeLayers: 0
+  serializedMultithreading: 1
+  serializedMaxThreads: 3
+  serializedAutoMaxThreads: 1
+  serializedMaxApplyTime: 3
 --- !u!1 &1482534319
 GameObject:
   m_ObjectHideFlags: 0
@@ -1465,6 +3384,7 @@ GameObject:
   - component: {fileID: 1482534322}
   - component: {fileID: 1482534321}
   - component: {fileID: 1482534320}
+  - component: {fileID: 1482534323}
   m_Layer: 0
   m_Name: Terrain_(-100.00, 0.00, -100.00)
   m_TagString: Untagged
@@ -1545,6 +3465,130 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1482534323
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1482534319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c503e08679b9d8d408f0a3e55874ae93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 0}
+  guiOpenObjectSelector: 0
+  guiTiles: 1
+  tiles:
+    allowMove: 1
+    generateInfinite: 1
+    generateRange: 2
+    retainMargin: 1
+    genAroundMainCam: 1
+    genAroundObjsTag: 0
+    genAroundTag: 
+    serializedTiles: []
+    serializedCoords: []
+    customTiles: []
+    serializedPinnedCoords: []
+  tileSize:
+    x: 1000
+    z: 1000
+  previewCoord:
+    x: 0
+    z: 0
+  previewAssigned: 0
+  tileResolution: 513
+  tileMargins: 16
+  draftsInEditor: 1
+  draftsInPlaymode: 1
+  draftResolution: 65
+  draftMargins: 2
+  guiLocks: 0
+  locks: []
+  guiInfiniteTerrains: 0
+  hideFarTerrains: 1
+  mainRange: 1
+  clearOnNodeRemove: 1
+  terrainSettings:
+    allowAutoConnect: 1
+    groupingID: 0
+    baseMapDist: 1000
+    showBaseMap: 1
+    baseMapResolution: 1024
+    drawInstanced: 1
+    pixelError: 1
+    shadowCastingMode: 0
+    reflectionProbeUsage: 1
+    editorRenderFlags: 7
+    heightmapMaximumLOD: 0
+    material: {fileID: 1689343119}
+    detailDraw: 1
+    detailDistance: 80
+    detailDensity: 1
+    treeDistance: 1000
+    treeBillboardStart: 200
+    treeFadeLength: 5
+    treeFullLod: 150
+    treeLODBiasMultiplier: 1
+    bakeLightProbesForTrees: 0
+    deringLightProbesForTrees: 1
+    preserveTreePrototypeLayers: 0
+    windSpeed: 0.5
+    windSize: 0.5
+    windBending: 0.5
+    grassTint: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    guiCopy: 0
+    copyLayersTags: 1
+    copyComponents: 0
+  globals:
+    height: 250
+    heightInterpolation: 0
+    heightSplit: 129
+    heightMainApply: 2
+    heightDraftApply: 0
+    grassResDownscale: 1
+    grassResPerPatch: 16
+    grassScatterMode: 1
+    objectsNumPerFrame: 500
+    holesRes: 64
+    customControlTextureNames:
+    - _ControlTexture1
+    ctsProfile: {fileID: 0}
+    microSplatPropData: {fileID: 0}
+    microSplatTerrainDescriptor: 0
+    microSplatApplyType: 0
+    useCustomControlTextures: 0
+    microSplatNormals: 0
+    megaSplatTexList: {fileID: 0}
+    vegetationPackage: {fileID: 0}
+    assignComponent: 0
+    vegetationSystem: {fileID: 0}
+    vegetationSystemCopy: 1
+    sourceMultiPackageVsProTagName: 
+  guiSettings: 0
+  guiTileSettings: 0
+  guiOutputsSettings: 0
+  guiExposedVariables: 0
+  guiTerrainSettings: 0
+  guiDraftSettings: 0
+  guiTreesGrassSettings: 0
+  instantGenerate: 1
+  saveIntermediate: 1
+  heightWeldMargins: 5
+  splatsWeldMargins: 2
+  guiHideWireframe: 0
+  guiThreads: 0
+  applyColliders: 1
+  setDirty: 0
+  shift: 0
+  shiftThreshold: 4000
+  shiftExcludeLayers: 0
+  serializedMultithreading: 1
+  serializedMaxThreads: 3
+  serializedAutoMaxThreads: 1
+  serializedMaxApplyTime: 3
 --- !u!1 &1622748597
 GameObject:
   m_ObjectHideFlags: 0
@@ -1556,6 +3600,7 @@ GameObject:
   - component: {fileID: 1622748600}
   - component: {fileID: 1622748599}
   - component: {fileID: 1622748598}
+  - component: {fileID: 1622748601}
   m_Layer: 0
   m_Name: Terrain_(100.00, 0.00, -400.00)
   m_TagString: Untagged
@@ -1636,6 +3681,185 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1622748601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1622748597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c503e08679b9d8d408f0a3e55874ae93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 0}
+  guiOpenObjectSelector: 0
+  guiTiles: 1
+  tiles:
+    allowMove: 1
+    generateInfinite: 1
+    generateRange: 2
+    retainMargin: 1
+    genAroundMainCam: 1
+    genAroundObjsTag: 0
+    genAroundTag: 
+    serializedTiles: []
+    serializedCoords: []
+    customTiles: []
+    serializedPinnedCoords: []
+  tileSize:
+    x: 1000
+    z: 1000
+  previewCoord:
+    x: 0
+    z: 0
+  previewAssigned: 0
+  tileResolution: 513
+  tileMargins: 16
+  draftsInEditor: 1
+  draftsInPlaymode: 1
+  draftResolution: 65
+  draftMargins: 2
+  guiLocks: 0
+  locks: []
+  guiInfiniteTerrains: 0
+  hideFarTerrains: 1
+  mainRange: 1
+  clearOnNodeRemove: 1
+  terrainSettings:
+    allowAutoConnect: 1
+    groupingID: 0
+    baseMapDist: 1000
+    showBaseMap: 1
+    baseMapResolution: 1024
+    drawInstanced: 1
+    pixelError: 1
+    shadowCastingMode: 0
+    reflectionProbeUsage: 1
+    editorRenderFlags: 7
+    heightmapMaximumLOD: 0
+    material: {fileID: 2020083712}
+    detailDraw: 1
+    detailDistance: 80
+    detailDensity: 1
+    treeDistance: 1000
+    treeBillboardStart: 200
+    treeFadeLength: 5
+    treeFullLod: 150
+    treeLODBiasMultiplier: 1
+    bakeLightProbesForTrees: 0
+    deringLightProbesForTrees: 1
+    preserveTreePrototypeLayers: 0
+    windSpeed: 0.5
+    windSize: 0.5
+    windBending: 0.5
+    grassTint: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    guiCopy: 0
+    copyLayersTags: 1
+    copyComponents: 0
+  globals:
+    height: 250
+    heightInterpolation: 0
+    heightSplit: 129
+    heightMainApply: 2
+    heightDraftApply: 0
+    grassResDownscale: 1
+    grassResPerPatch: 16
+    grassScatterMode: 1
+    objectsNumPerFrame: 500
+    holesRes: 64
+    customControlTextureNames:
+    - _ControlTexture1
+    ctsProfile: {fileID: 0}
+    microSplatPropData: {fileID: 0}
+    microSplatTerrainDescriptor: 0
+    microSplatApplyType: 0
+    useCustomControlTextures: 0
+    microSplatNormals: 0
+    megaSplatTexList: {fileID: 0}
+    vegetationPackage: {fileID: 0}
+    assignComponent: 0
+    vegetationSystem: {fileID: 0}
+    vegetationSystemCopy: 1
+    sourceMultiPackageVsProTagName: 
+  guiSettings: 0
+  guiTileSettings: 0
+  guiOutputsSettings: 0
+  guiExposedVariables: 0
+  guiTerrainSettings: 0
+  guiDraftSettings: 0
+  guiTreesGrassSettings: 0
+  instantGenerate: 1
+  saveIntermediate: 1
+  heightWeldMargins: 5
+  splatsWeldMargins: 2
+  guiHideWireframe: 0
+  guiThreads: 0
+  applyColliders: 1
+  setDirty: 0
+  shift: 0
+  shiftThreshold: 4000
+  shiftExcludeLayers: 0
+  serializedMultithreading: 1
+  serializedMaxThreads: 3
+  serializedAutoMaxThreads: 1
+  serializedMaxApplyTime: 3
+--- !u!21 &1689343119
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: HDRP/TerrainLit
+  m_Shader: {fileID: 4800000, guid: eb607f5e8fc16e140b732f33d26c8c31, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TerrainHolesTexture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _AddPrecomputedVelocity: 0
+    - _CullMode: 2
+    - _EnableHeightBlend: 0
+    - _EnableInstancedPerPixelNormal: 1
+    - _HeightTransition: 0
+    - _ReceivesSSR: 1
+    - _SpecularOcclusionMode: 1
+    - _StencilRef: 0
+    - _StencilRefDepth: 0
+    - _StencilRefGBuffer: 2
+    - _StencilWriteMask: 3
+    - _StencilWriteMaskDepth: 8
+    - _StencilWriteMaskGBuffer: 3
+    - _SupportDecals: 1
+    - _TransparentZWrite: 0
+    - _ZTestDepthEqualForOpaque: 4
+    - _ZTestGBuffer: 4
+    - _ZWrite: 1
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1 &1846991160
 GameObject:
   m_ObjectHideFlags: 0
@@ -1647,6 +3871,7 @@ GameObject:
   - component: {fileID: 1846991163}
   - component: {fileID: 1846991162}
   - component: {fileID: 1846991161}
+  - component: {fileID: 1846991164}
   m_Layer: 0
   m_Name: Terrain_(0.00, 0.00, -200.00)
   m_TagString: Untagged
@@ -1727,6 +3952,130 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1846991164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1846991160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c503e08679b9d8d408f0a3e55874ae93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 0}
+  guiOpenObjectSelector: 0
+  guiTiles: 1
+  tiles:
+    allowMove: 1
+    generateInfinite: 1
+    generateRange: 2
+    retainMargin: 1
+    genAroundMainCam: 1
+    genAroundObjsTag: 0
+    genAroundTag: 
+    serializedTiles: []
+    serializedCoords: []
+    customTiles: []
+    serializedPinnedCoords: []
+  tileSize:
+    x: 1000
+    z: 1000
+  previewCoord:
+    x: 0
+    z: 0
+  previewAssigned: 0
+  tileResolution: 513
+  tileMargins: 16
+  draftsInEditor: 1
+  draftsInPlaymode: 1
+  draftResolution: 65
+  draftMargins: 2
+  guiLocks: 0
+  locks: []
+  guiInfiniteTerrains: 0
+  hideFarTerrains: 1
+  mainRange: 1
+  clearOnNodeRemove: 1
+  terrainSettings:
+    allowAutoConnect: 1
+    groupingID: 0
+    baseMapDist: 1000
+    showBaseMap: 1
+    baseMapResolution: 1024
+    drawInstanced: 1
+    pixelError: 1
+    shadowCastingMode: 0
+    reflectionProbeUsage: 1
+    editorRenderFlags: 7
+    heightmapMaximumLOD: 0
+    material: {fileID: 1309544627}
+    detailDraw: 1
+    detailDistance: 80
+    detailDensity: 1
+    treeDistance: 1000
+    treeBillboardStart: 200
+    treeFadeLength: 5
+    treeFullLod: 150
+    treeLODBiasMultiplier: 1
+    bakeLightProbesForTrees: 0
+    deringLightProbesForTrees: 1
+    preserveTreePrototypeLayers: 0
+    windSpeed: 0.5
+    windSize: 0.5
+    windBending: 0.5
+    grassTint: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    guiCopy: 0
+    copyLayersTags: 1
+    copyComponents: 0
+  globals:
+    height: 250
+    heightInterpolation: 0
+    heightSplit: 129
+    heightMainApply: 2
+    heightDraftApply: 0
+    grassResDownscale: 1
+    grassResPerPatch: 16
+    grassScatterMode: 1
+    objectsNumPerFrame: 500
+    holesRes: 64
+    customControlTextureNames:
+    - _ControlTexture1
+    ctsProfile: {fileID: 0}
+    microSplatPropData: {fileID: 0}
+    microSplatTerrainDescriptor: 0
+    microSplatApplyType: 0
+    useCustomControlTextures: 0
+    microSplatNormals: 0
+    megaSplatTexList: {fileID: 0}
+    vegetationPackage: {fileID: 0}
+    assignComponent: 0
+    vegetationSystem: {fileID: 0}
+    vegetationSystemCopy: 1
+    sourceMultiPackageVsProTagName: 
+  guiSettings: 0
+  guiTileSettings: 0
+  guiOutputsSettings: 0
+  guiExposedVariables: 0
+  guiTerrainSettings: 0
+  guiDraftSettings: 0
+  guiTreesGrassSettings: 0
+  instantGenerate: 1
+  saveIntermediate: 1
+  heightWeldMargins: 5
+  splatsWeldMargins: 2
+  guiHideWireframe: 0
+  guiThreads: 0
+  applyColliders: 1
+  setDirty: 0
+  shift: 0
+  shiftThreshold: 4000
+  shiftExcludeLayers: 0
+  serializedMultithreading: 1
+  serializedMaxThreads: 3
+  serializedAutoMaxThreads: 1
+  serializedMaxApplyTime: 3
 --- !u!1 &1950830166
 GameObject:
   m_ObjectHideFlags: 0
@@ -1738,6 +4087,7 @@ GameObject:
   - component: {fileID: 1950830169}
   - component: {fileID: 1950830168}
   - component: {fileID: 1950830167}
+  - component: {fileID: 1950830170}
   m_Layer: 0
   m_Name: Terrain_(100.00, 0.00, -300.00)
   m_TagString: Untagged
@@ -1818,6 +4168,240 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1950830170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1950830166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c503e08679b9d8d408f0a3e55874ae93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 0}
+  guiOpenObjectSelector: 0
+  guiTiles: 1
+  tiles:
+    allowMove: 1
+    generateInfinite: 1
+    generateRange: 2
+    retainMargin: 1
+    genAroundMainCam: 1
+    genAroundObjsTag: 0
+    genAroundTag: 
+    serializedTiles: []
+    serializedCoords: []
+    customTiles: []
+    serializedPinnedCoords: []
+  tileSize:
+    x: 1000
+    z: 1000
+  previewCoord:
+    x: 0
+    z: 0
+  previewAssigned: 0
+  tileResolution: 513
+  tileMargins: 16
+  draftsInEditor: 1
+  draftsInPlaymode: 1
+  draftResolution: 65
+  draftMargins: 2
+  guiLocks: 0
+  locks: []
+  guiInfiniteTerrains: 0
+  hideFarTerrains: 1
+  mainRange: 1
+  clearOnNodeRemove: 1
+  terrainSettings:
+    allowAutoConnect: 1
+    groupingID: 0
+    baseMapDist: 1000
+    showBaseMap: 1
+    baseMapResolution: 1024
+    drawInstanced: 1
+    pixelError: 1
+    shadowCastingMode: 0
+    reflectionProbeUsage: 1
+    editorRenderFlags: 7
+    heightmapMaximumLOD: 0
+    material: {fileID: 1257259064}
+    detailDraw: 1
+    detailDistance: 80
+    detailDensity: 1
+    treeDistance: 1000
+    treeBillboardStart: 200
+    treeFadeLength: 5
+    treeFullLod: 150
+    treeLODBiasMultiplier: 1
+    bakeLightProbesForTrees: 0
+    deringLightProbesForTrees: 1
+    preserveTreePrototypeLayers: 0
+    windSpeed: 0.5
+    windSize: 0.5
+    windBending: 0.5
+    grassTint: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    guiCopy: 0
+    copyLayersTags: 1
+    copyComponents: 0
+  globals:
+    height: 250
+    heightInterpolation: 0
+    heightSplit: 129
+    heightMainApply: 2
+    heightDraftApply: 0
+    grassResDownscale: 1
+    grassResPerPatch: 16
+    grassScatterMode: 1
+    objectsNumPerFrame: 500
+    holesRes: 64
+    customControlTextureNames:
+    - _ControlTexture1
+    ctsProfile: {fileID: 0}
+    microSplatPropData: {fileID: 0}
+    microSplatTerrainDescriptor: 0
+    microSplatApplyType: 0
+    useCustomControlTextures: 0
+    microSplatNormals: 0
+    megaSplatTexList: {fileID: 0}
+    vegetationPackage: {fileID: 0}
+    assignComponent: 0
+    vegetationSystem: {fileID: 0}
+    vegetationSystemCopy: 1
+    sourceMultiPackageVsProTagName: 
+  guiSettings: 0
+  guiTileSettings: 0
+  guiOutputsSettings: 0
+  guiExposedVariables: 0
+  guiTerrainSettings: 0
+  guiDraftSettings: 0
+  guiTreesGrassSettings: 0
+  instantGenerate: 1
+  saveIntermediate: 1
+  heightWeldMargins: 5
+  splatsWeldMargins: 2
+  guiHideWireframe: 0
+  guiThreads: 0
+  applyColliders: 1
+  setDirty: 0
+  shift: 0
+  shiftThreshold: 4000
+  shiftExcludeLayers: 0
+  serializedMultithreading: 1
+  serializedMaxThreads: 3
+  serializedAutoMaxThreads: 1
+  serializedMaxApplyTime: 3
+--- !u!21 &1995929653
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: HDRP/TerrainLit
+  m_Shader: {fileID: 4800000, guid: eb607f5e8fc16e140b732f33d26c8c31, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TerrainHolesTexture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _AddPrecomputedVelocity: 0
+    - _CullMode: 2
+    - _EnableHeightBlend: 0
+    - _EnableInstancedPerPixelNormal: 1
+    - _HeightTransition: 0
+    - _ReceivesSSR: 1
+    - _SpecularOcclusionMode: 1
+    - _StencilRef: 0
+    - _StencilRefDepth: 0
+    - _StencilRefGBuffer: 2
+    - _StencilWriteMask: 3
+    - _StencilWriteMaskDepth: 8
+    - _StencilWriteMaskGBuffer: 3
+    - _SupportDecals: 1
+    - _TransparentZWrite: 0
+    - _ZTestDepthEqualForOpaque: 4
+    - _ZTestGBuffer: 4
+    - _ZWrite: 1
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
+--- !u!21 &2020083712
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: HDRP/TerrainLit
+  m_Shader: {fileID: 4800000, guid: eb607f5e8fc16e140b732f33d26c8c31, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TerrainHolesTexture:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _AddPrecomputedVelocity: 0
+    - _CullMode: 2
+    - _EnableHeightBlend: 0
+    - _EnableInstancedPerPixelNormal: 1
+    - _HeightTransition: 0
+    - _ReceivesSSR: 1
+    - _SpecularOcclusionMode: 1
+    - _StencilRef: 0
+    - _StencilRefDepth: 0
+    - _StencilRefGBuffer: 2
+    - _StencilWriteMask: 3
+    - _StencilWriteMaskDepth: 8
+    - _StencilWriteMaskGBuffer: 3
+    - _SupportDecals: 1
+    - _TransparentZWrite: 0
+    - _ZTestDepthEqualForOpaque: 4
+    - _ZTestGBuffer: 4
+    - _ZWrite: 1
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissionColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1 &2117518537
 GameObject:
   m_ObjectHideFlags: 0
@@ -1829,6 +4413,7 @@ GameObject:
   - component: {fileID: 2117518540}
   - component: {fileID: 2117518539}
   - component: {fileID: 2117518538}
+  - component: {fileID: 2117518541}
   m_Layer: 0
   m_Name: Terrain_(0.00, 0.00, -100.00)
   m_TagString: Untagged
@@ -1854,7 +4439,7 @@ TerrainCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_TerrainData: {fileID: 15600000, guid: d215b766d42a078498f50dcfbb64f1ca, type: 2}
+  m_TerrainData: {fileID: 15600000, guid: f5bf5c155d80cdf4eafbd1da98757a70, type: 2}
   m_EnableTreeColliders: 1
 --- !u!218 &2117518539
 Terrain:
@@ -1909,3 +4494,127 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2117518541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2117518537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c503e08679b9d8d408f0a3e55874ae93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000, guid: fa6422632cb7b1f4ab4fce1030150e47, type: 2}
+  guiOpenObjectSelector: 0
+  guiTiles: 1
+  tiles:
+    allowMove: 1
+    generateInfinite: 1
+    generateRange: 2
+    retainMargin: 1
+    genAroundMainCam: 1
+    genAroundObjsTag: 0
+    genAroundTag: 
+    serializedTiles: []
+    serializedCoords: []
+    customTiles: []
+    serializedPinnedCoords: []
+  tileSize:
+    x: 100
+    z: 100
+  previewCoord:
+    x: 0
+    z: 0
+  previewAssigned: 0
+  tileResolution: 513
+  tileMargins: 16
+  draftsInEditor: 1
+  draftsInPlaymode: 1
+  draftResolution: 65
+  draftMargins: 2
+  guiLocks: 0
+  locks: []
+  guiInfiniteTerrains: 1
+  hideFarTerrains: 1
+  mainRange: 1
+  clearOnNodeRemove: 1
+  terrainSettings:
+    allowAutoConnect: 1
+    groupingID: 0
+    baseMapDist: 1000
+    showBaseMap: 1
+    baseMapResolution: 1024
+    drawInstanced: 1
+    pixelError: 1
+    shadowCastingMode: 0
+    reflectionProbeUsage: 1
+    editorRenderFlags: 7
+    heightmapMaximumLOD: 0
+    material: {fileID: 1301658010}
+    detailDraw: 1
+    detailDistance: 80
+    detailDensity: 1
+    treeDistance: 1000
+    treeBillboardStart: 200
+    treeFadeLength: 5
+    treeFullLod: 150
+    treeLODBiasMultiplier: 1
+    bakeLightProbesForTrees: 0
+    deringLightProbesForTrees: 1
+    preserveTreePrototypeLayers: 0
+    windSpeed: 0.5
+    windSize: 0.5
+    windBending: 0.5
+    grassTint: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+    guiCopy: 0
+    copyLayersTags: 1
+    copyComponents: 0
+  globals:
+    height: 250
+    heightInterpolation: 0
+    heightSplit: 129
+    heightMainApply: 2
+    heightDraftApply: 0
+    grassResDownscale: 1
+    grassResPerPatch: 16
+    grassScatterMode: 1
+    objectsNumPerFrame: 500
+    holesRes: 64
+    customControlTextureNames:
+    - _ControlTexture1
+    ctsProfile: {fileID: 0}
+    microSplatPropData: {fileID: 0}
+    microSplatTerrainDescriptor: 0
+    microSplatApplyType: 0
+    useCustomControlTextures: 0
+    microSplatNormals: 0
+    megaSplatTexList: {fileID: 0}
+    vegetationPackage: {fileID: 0}
+    assignComponent: 0
+    vegetationSystem: {fileID: 0}
+    vegetationSystemCopy: 1
+    sourceMultiPackageVsProTagName: 
+  guiSettings: 0
+  guiTileSettings: 1
+  guiOutputsSettings: 0
+  guiExposedVariables: 0
+  guiTerrainSettings: 0
+  guiDraftSettings: 0
+  guiTreesGrassSettings: 0
+  instantGenerate: 1
+  saveIntermediate: 1
+  heightWeldMargins: 5
+  splatsWeldMargins: 2
+  guiHideWireframe: 0
+  guiThreads: 0
+  applyColliders: 1
+  setDirty: 0
+  shift: 0
+  shiftThreshold: 4000
+  shiftExcludeLayers: 0
+  serializedMultithreading: 1
+  serializedMaxThreads: 3
+  serializedAutoMaxThreads: 1
+  serializedMaxApplyTime: 3
