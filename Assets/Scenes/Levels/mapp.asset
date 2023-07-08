@@ -1482,7 +1482,7 @@ MonoBehaviour:
       - t: 11
         v: 1961015272022212707
       - t: 11
-        v: 6
+        v: 8
       - t: 255
         v: 74
       - t: 255
@@ -1556,7 +1556,7 @@ MonoBehaviour:
       - t: 2
         v: 0
       - t: 1
-        v: 2
+        v: 0
       - t: 1
         v: 0
       - t: 1
@@ -1627,7 +1627,7 @@ MonoBehaviour:
       - value__
       values:
       - t: 1
-        v: 1157426255
+        v: 1
       special: 
       uniObj: {fileID: 0}
     - refId: 74
