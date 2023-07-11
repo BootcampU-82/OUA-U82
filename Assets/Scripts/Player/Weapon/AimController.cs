@@ -6,8 +6,6 @@ namespace Assets.Scripts.Player.Weapon
     [RequireComponent(typeof(CameraController))]
     public class AimController : MonoBehaviour
     {
-        public bool aimSet;
-        public bool isPistol;
         [SerializeField] PlayerController playerController;
         [SerializeField] BodyControl bodyControl;
         [SerializeField] Rig rigLayerHandIK;
@@ -58,8 +56,7 @@ namespace Assets.Scripts.Player.Weapon
                 
             }
 
-            if(isPistol)
-            {
+            
                 if (InputController() && !isCameraAimAlign)
                 {
                     cameraController.CameraAlign(new Vector3(0.75f, 0f, 0f), 1.5f);
@@ -76,7 +73,7 @@ namespace Assets.Scripts.Player.Weapon
                     weapon.SetActive(false);
                     isCameraAimAlign = false;
                 }
-            }
+            
             
             
             
@@ -123,7 +120,7 @@ namespace Assets.Scripts.Player.Weapon
         /// <returns></returns>
         bool InputController()
         {
-            if (Input.GetKey(KeyCode.Mouse1) || aimSet)
+            if (Input.GetKey(KeyCode.Mouse1))
             {
                 return true;
             }
