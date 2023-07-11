@@ -9,14 +9,14 @@ using UnityEngine;
 namespace Hapki {
 
 public static class EnumExtensions {
-    public static T[] GetValuesAsInstances<T>(Type type) {
+    public static T[] GetValuesAsInstances<T>(Type type, string assembly) {
         var names = Enum.GetNames(type);
         var array = (T[]) Array.CreateInstance(typeof(T), names.Length);
-        var assembly = type.Assembly.FullName;
+        //var assembly = type.Assembly.FullName;
         var space = type.Namespace;
         for (int i = 0, n = names.Length; i < n; ++i) {
             var fullName = space != null ? space + "." + names[i] : names[i];
-            array[i] = (T) Activator.CreateInstance(assembly, fullName).Unwrap();
+            //array[i] = (T) Activator.CreateInstance( assembly, fullName).Unwrap();
         }
         return array;
     }
