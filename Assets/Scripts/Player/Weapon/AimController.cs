@@ -17,7 +17,7 @@ namespace Assets.Scripts.Player.Weapon
 
         [SerializeField] Transform mainCamera, cameraWeaponPos;
 
-        
+
         /// <summary>
         /// Camera aim olayı için hizalandı mı?
         /// </summary>
@@ -45,18 +45,20 @@ namespace Assets.Scripts.Player.Weapon
 
         private void Update()
         {
-            if (Input.GetMouseButtonDown(0))
-            {
-                EnemyHitControl();
-            }
 
-            if (isCameraAimAlign)
+            if (GameMenuManager.Instance.isPaused)
             {
-                playerController.RotatePlayer(Quaternion.LookRotation(cameraController.PlanarRotation*new Vector3(0f,0f,1f)));
-                
-            }
+                if (Input.GetMouseButtonDown(0))
+                {
+                    EnemyHitControl();
+                }
+                if (isCameraAimAlign)
+                {
+                    playerController.RotatePlayer(Quaternion.LookRotation(cameraController.PlanarRotation * new Vector3(0f, 0f, 1f)));
 
-            
+                }
+
+
                 if (InputController() && !isCameraAimAlign)
                 {
                     cameraController.CameraAlign(new Vector3(0.75f, 0f, 0f), 1.5f);
@@ -73,23 +75,25 @@ namespace Assets.Scripts.Player.Weapon
                     weapon.SetActive(false);
                     isCameraAimAlign = false;
                 }
-            
-            
-            
-            
-            float rotValue;
-            if (mainCamera.eulerAngles.x>180)
-                rotValue = -20f - (mainCamera.eulerAngles.x - 360f);
-            else
-                rotValue = -20f - mainCamera.eulerAngles.x;
 
-            cameraWeaponPos.localPosition = new Vector3(cameraWeaponPos.localPosition.x, cameraWeaponPos.localPosition.y, 2.3f - (Mathf.Abs(rotValue)  * 0.004f));
-            weapon.transform.position = cameraWeaponPos.position;
+
+
+
+                float rotValue;
+                if (mainCamera.eulerAngles.x > 180)
+                    rotValue = -20f - (mainCamera.eulerAngles.x - 360f);
+                else
+                    rotValue = -20f - mainCamera.eulerAngles.x;
+
+                cameraWeaponPos.localPosition = new Vector3(cameraWeaponPos.localPosition.x, cameraWeaponPos.localPosition.y, 2.3f - (Mathf.Abs(rotValue) * 0.004f));
+                weapon.transform.position = cameraWeaponPos.position;
+            }
+
         }
 
 
 
-       
+
 
 
         /// <summary>
