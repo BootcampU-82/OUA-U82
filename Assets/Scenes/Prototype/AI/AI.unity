@@ -4288,8 +4288,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 699521381}
-  m_LocalRotation: {x: 0.3166376, y: 0.3676223, z: -0.1347751, w: 0.86396194}
-  m_LocalPosition: {x: -13.709505, y: 56.21558, z: -18.432056}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -14170,6 +14170,7 @@ GameObject:
   - component: {fileID: 1796091013}
   - component: {fileID: 1796091012}
   - component: {fileID: 1796091016}
+  - component: {fileID: 1796091017}
   m_Layer: 0
   m_Name: SpawnPoint
   m_TagString: Untagged
@@ -14278,6 +14279,23 @@ MonoBehaviour:
   basicAI: {fileID: 9121835439889504911, guid: 0cc6286154363454c8dd19ae2b014ada, type: 3}
   startTime: 1
   spawnRate: 2
+--- !u!114 &1796091017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1796091011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68a94a9513e857f4eb739e749e0040dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnPoint: {fileID: 0}
+  pools:
+  - poolSize: 15
+    objectPrefab: {fileID: 9121835439889504911, guid: 0cc6286154363454c8dd19ae2b014ada,
+      type: 3}
 --- !u!1 &1882971344
 GameObject:
   m_ObjectHideFlags: 0

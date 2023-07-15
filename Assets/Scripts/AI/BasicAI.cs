@@ -28,7 +28,7 @@ public class BasicAI : MonoBehaviour
         }
 
         canAttack = CalculateDistanceWithPlayer(gameObject) < attactDistance ? true : false;
-        _animator.SetBool("CanAttack", canAttack);
+        _animator.SetBool("Attack", canAttack);
 
     }
 
