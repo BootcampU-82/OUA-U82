@@ -1612,7 +1612,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: MenuScene
+          m_StringArgument: Map001
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1281387049651931655
@@ -2440,7 +2440,7 @@ Transform:
   - {fileID: 4642121642370830874}
   - {fileID: 487488529439868852}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1150943299443157081
 GameObject:
@@ -4162,7 +4162,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 4061001335701679493}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2077661492411119107}
+        m_TargetAssemblyTypeName: UI.Menu.UIMenuManager, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Map001
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &3179758886603747695
 MonoBehaviour:
   m_ObjectHideFlags: 0

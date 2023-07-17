@@ -23,6 +23,7 @@ public class PuzzleCursorControl : MonoBehaviour
             // ışın bir nesne ile çarpışırsa
             if (Physics.Raycast(ray, out hit, 100f))
             {
+                Debug.Log(hit.collider.transform.tag);
                 // Işının "Enemy" etiketine sahip bir nesneyle çarpıştığı durumda
                 if (hit.collider.CompareTag("PuzzlePart"))
                 {

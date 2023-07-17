@@ -10,6 +10,7 @@ namespace Assets.Scripts.Player.Weapon
         [SerializeField] BodyControl bodyControl;
         [SerializeField] Rig rigLayerHandIK;
         [SerializeField] GameObject weapon;
+        [SerializeField] GameObject crosshair;
 
 
         CameraController cameraController;
@@ -59,6 +60,7 @@ namespace Assets.Scripts.Player.Weapon
             
                 if (InputController() && !isCameraAimAlign)
                 {
+                    crosshair.SetActive(true);
                     cameraController.CameraAlign(new Vector3(0.75f, 0f, 0f), 1.5f);
                     bodyControl.SetMACWeightsAiming(0.3f);
                     rigLayerHandIK.weight = 1f;
@@ -67,6 +69,7 @@ namespace Assets.Scripts.Player.Weapon
                 }
                 else if (!InputController() && isCameraAimAlign)
                 {
+                    crosshair.SetActive(false);
                     cameraController.CameraAlign(Vector3.zero, 2.5f);
                     bodyControl.SetMACWeightsAiming(0.05f);
                     rigLayerHandIK.weight = 0f;

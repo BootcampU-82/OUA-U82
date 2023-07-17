@@ -61,6 +61,8 @@ public class PlayerHealth : MonoBehaviour
     {
         isDead = true;
         FailScene.SetActive(true);
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
         //FailBlurEffectObject.SetActive(true);
     }
 }

@@ -10,9 +10,12 @@ public class GameMenuManager : MonoBehaviour
     private GameObject pausePanel;
     [SerializeField]
     private GameObject pausePanelBlur;
-    [SerializeField]
-    private GameObject settingsPanel;
+
+    
+    public bool isPuzzleComplete;
+    
     public bool isPaused = false;
+
 
     private static GameMenuManager instance;
 
@@ -91,10 +94,5 @@ public class GameMenuManager : MonoBehaviour
         SceneManager.LoadScene("MenuScene");
     }
 
-    public void SettingsButton()
-    {
-        pausePanel.SetActive(false);
-        settingsPanel.SetActive(true);
-
-    }
+    
 }

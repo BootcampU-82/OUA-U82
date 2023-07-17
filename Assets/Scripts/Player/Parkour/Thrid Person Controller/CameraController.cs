@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-    
+
 
     /// <summary>
     /// Takip edilecek hedef
@@ -59,18 +59,20 @@ public class CameraController : MonoBehaviour
 
     private void Update()
     {
-        
-        rotationX += Input.GetAxis("Camera Y") * invertYVal * rotationSpeed;
-        rotationX = Mathf.Clamp(rotationX, minVerticalAngle, maxVerticalAngle);
+        if (Time.timeScale != 0)
+        {
+            rotationX += Input.GetAxis("Camera Y") * invertYVal * rotationSpeed;
+            rotationX = Mathf.Clamp(rotationX, minVerticalAngle, maxVerticalAngle);
 
-        rotationY += Input.GetAxis("Camera X") * invertXVal * rotationSpeed;
+            rotationY += Input.GetAxis("Camera X") * invertXVal * rotationSpeed;
 
-        var targetRotation = Quaternion.Euler(rotationX, rotationY, 0);
+            var targetRotation = Quaternion.Euler(rotationX, rotationY, 0);
 
-        var focusPostion = followTarget.position + new Vector3(framingOffset.x, framingOffset.y);
+            var focusPostion = followTarget.position + new Vector3(framingOffset.x, framingOffset.y);
 
-        transform.position = focusPostion - targetRotation * new Vector3(0, 0, distance);
-        transform.rotation = targetRotation;
+            transform.position = focusPostion - targetRotation * new Vector3(0, 0, distance);
+            transform.rotation = targetRotation;
+        }
     }
 
     /// <summary>

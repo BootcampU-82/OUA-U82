@@ -1,6 +1,8 @@
+using JetBrains.Annotations;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.TextCore.Text;
 
 public class PuzzleComplete : MonoBehaviour
 {
@@ -37,110 +39,69 @@ public class PuzzleComplete : MonoBehaviour
     public GameObject cube14;
     public GameObject cube15;
     public GameObject cube16;
-    
+    public Animator caveDoor;
+
     public bool puzzleComplete = false;
-    void Start()
+
+
+    private void Update()
     {
-        
+        if (gameObject.GetComponent<Puzzle>().puzzleControl)
+        {
+
+
+            if (!GameMenuManager.Instance.isPuzzleComplete)
+            {
+                Debug.Log("calosýyo");
+                bool puzzleComplete = true;
+
+                Transform[] parts = new Transform[]
+                {
+                part1.GetComponent<Collider>().transform,
+                part2.GetComponent<Collider>().transform,
+                part3.GetComponent<Collider>().transform,
+                part4.GetComponent<Collider>().transform,
+                part5.GetComponent<Collider>().transform,
+                part6.GetComponent<Collider>().transform,
+                part7.GetComponent<Collider>().transform,
+                part8.GetComponent<Collider>().transform,
+                part9.GetComponent<Collider>().transform,
+                part10.GetComponent<Collider>().transform,
+                part11.GetComponent<Collider>().transform,
+                part12.GetComponent<Collider>().transform,
+                part13.GetComponent<Collider>().transform,
+                part14.GetComponent<Collider>().transform,
+                part15.GetComponent<Collider>().transform,
+                part16.GetComponent<Collider>().transform
+                };
+
+                foreach (Transform part in parts)
+                {
+                    if (part.eulerAngles.y > 0)
+                    {
+                        puzzleComplete = false;
+                        break;
+                    }
+                }
+
+                if (puzzleComplete)
+                {
+                    foreach (GameObject cube in new GameObject[] {
+            cube1, cube2, cube3, cube4, cube5, cube6, cube7, cube8,
+            cube9, cube10, cube11, cube12, cube13, cube14, cube15, cube16
+        })
+                    {
+                        cube.transform.position -= new Vector3(0, 0.1f, 0);
+                        GameMenuManager.Instance.isPuzzleComplete = true;
+                        Cursor.lockState = CursorLockMode.Locked;
+
+                        gameObject.GetComponent<Puzzle>().PuzzleExit();
+                        caveDoor.SetTrigger("start");
+                    }
+                }
+            }
+        }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-            if (part1.GetComponent<Collider>().transform.eulerAngles.y <= 0)
-                if (part2.GetComponent<Collider>().transform.eulerAngles.y <= 0)
-                    if (part3.GetComponent<Collider>().transform.eulerAngles.y <= 0)
-                        if (part4.GetComponent<Collider>().transform.eulerAngles.y <= 0)
-                            if (part5.GetComponent<Collider>().transform.eulerAngles.y <= 0)
-                                if (part6.GetComponent<Collider>().transform.eulerAngles.y <= 0)
-                                    if (part7.GetComponent<Collider>().transform.eulerAngles.y <= 0)
-                                        if (part8.GetComponent<Collider>().transform.eulerAngles.y <= 0)
-                                            if (part9.GetComponent<Collider>().transform.eulerAngles.y <= 0)
-                                                if (part10.GetComponent<Collider>().transform.eulerAngles.y <= 0)
-                                                    if (part11.GetComponent<Collider>().transform.eulerAngles.y <= 0)
-                                                        if (part12.GetComponent<Collider>().transform.eulerAngles.y <=
-                                                            0)
-                                                            if (part13.GetComponent<Collider>().transform.eulerAngles
-                                                                    .y <= 0)
-                                                                if (part14.GetComponent<Collider>().transform
-                                                                        .eulerAngles.y <= 0)
-                                                                    if (part15.GetComponent<Collider>().transform
-                                                                            .eulerAngles.y <= 0)
-                                                                        if (part16.GetComponent<Collider>().transform
-                                                                                .eulerAngles.y <= 0)
-                                                                        {
-                                                                            puzzleComplete = true;
-                                                                            cube1.transform.position =
-                                                                                new Vector3(cube1.transform.position.x,
-                                                                                    cube1.transform.position.y-0.1f,
-                                                                                    cube1.transform.position.z);
-                                                                            cube2.transform.position =
-                                                                                new Vector3(cube2.transform.position.x,
-                                                                                    cube2.transform.position.y-0.1f,
-                                                                                    cube2.transform.position.z);
-                                                                            cube3.transform.position =
-                                                                                new Vector3(cube3.transform.position.x,
-                                                                                    cube3.transform.position.y-0.1f,
-                                                                                    cube3.transform.position.z);
-                                                                            cube4.transform.position =
-                                                                                new Vector3(cube4.transform.position.x,
-                                                                                    cube4.transform.position.y-0.1f,
-                                                                                    cube4.transform.position.z);
-                                                                            cube5.transform.position =
-                                                                                new Vector3(cube5.transform.position.x,
-                                                                                    cube5.transform.position.y-0.1f,
-                                                                                    cube5.transform.position.z);
-                                                                            cube6.transform.position =
-                                                                                new Vector3(cube6.transform.position.x,
-                                                                                    cube6.transform.position.y-0.1f,
-                                                                                    cube6.transform.position.z);
-                                                                            cube7.transform.position =
-                                                                                new Vector3(cube7.transform.position.x,
-                                                                                    cube7.transform.position.y-0.1f,
-                                                                                    cube7.transform.position.z);
-                                                                            cube8.transform.position =
-                                                                                new Vector3(cube8.transform.position.x,
-                                                                                    cube8.transform.position.y-0.1f,
-                                                                                    cube8.transform.position.z);
-                                                                            cube9.transform.position =
-                                                                                new Vector3(cube9.transform.position.x,
-                                                                                    cube9.transform.position.y-0.1f,
-                                                                                    cube9.transform.position.z);
-                                                                            cube10.transform.position =
-                                                                                new Vector3(cube10.transform.position.x,
-                                                                                    cube10.transform.position.y-0.1f,
-                                                                                    cube10.transform.position.z);
-                                                                            cube11.transform.position =
-                                                                                new Vector3(cube11.transform.position.x,
-                                                                                    cube11.transform.position.y-0.1f,
-                                                                                    cube11.transform.position.z);
-                                                                            cube12.transform.position =
-                                                                                new Vector3(cube12.transform.position.x,
-                                                                                    cube12.transform.position.y-0.1f,
-                                                                                    cube12.transform.position.z);
-                                                                            cube13.transform.position =
-                                                                                new Vector3(cube13.transform.position.x,
-                                                                                    cube13.transform.position.y-0.1f,
-                                                                                    cube13.transform.position.z);
-                                                                            cube14.transform.position =
-                                                                                new Vector3(cube14.transform.position.x,
-                                                                                    cube14.transform.position.y-0.1f,
-                                                                                    cube14.transform.position.z);
-                                                                            cube15.transform.position =
-                                                                                new Vector3(cube15.transform.position.x,
-                                                                                    cube15.transform.position.y-0.1f,
-                                                                                    cube15.transform.position.z);
-                                                                            cube16.transform.position =
-                                                                                new Vector3(cube16.transform.position.x,
-                                                                                    cube16.transform.position.y-0.1f,
-                                                                                    cube16.transform.position.z);
-                                                                        }
 
-
-
-
-
-        
-    }
 }
