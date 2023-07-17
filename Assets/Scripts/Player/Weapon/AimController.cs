@@ -18,6 +18,8 @@ namespace Assets.Scripts.Player.Weapon
 
         [SerializeField] Transform mainCamera, cameraWeaponPos;
 
+
+        [SerializeField] GameObject poisonVfx;
         
         /// <summary>
         /// Camera aim olayı için hizalandı mı?
@@ -107,6 +109,11 @@ namespace Assets.Scripts.Player.Weapon
                 // Işının çarptığı nesne, "Enemy" etiketine sahip bir nesne ise
                 if (hit.collider.CompareTag("Enemy"))
                 {
+
+                    GameObject blood = Instantiate(poisonVfx, hit.transform);
+                    Destroy(hit.collider.gameObject);
+                    Destroy(blood, 0.3f);
+                    
                     Debug.Log("Düşman vuruldu!");
                     return hit.transform.gameObject;
                 }

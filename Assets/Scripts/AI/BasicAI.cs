@@ -11,6 +11,7 @@ public class BasicAI : MonoBehaviour
     [SerializeField] float attactDistance;
     Animator _animator;
     bool canAttack = false;
+    [SerializeField] GameObject bloodVfx;
 
     private void OnEnable()
     {
@@ -22,14 +23,16 @@ public class BasicAI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (target)
+        if (GameMenuManager.Instance.spiderCanAttack)
         {
-            agent.SetDestination(target.transform.position);
+            if (target)
+            {
+                agent.SetDestination(target.transform.position);
+            }
+
+            canAttack = CalculateDistanceWithPlayer(gameObject) < attactDistance ? true : false;
+            _animator.SetBool("CanAttack", canAttack);
         }
-
-        canAttack = CalculateDistanceWithPlayer(gameObject) < attactDistance ? true : false;
-        _animator.SetBool("CanAttack", canAttack);
-
     }
 
     private float CalculateDistanceWithPlayer(GameObject gameObject)
@@ -37,5 +40,4 @@ public class BasicAI : MonoBehaviour
         return Vector3.Distance(gameObject.transform.position,target.transform.position);
     }
 
- 
 }

@@ -11,6 +11,8 @@ public class GameMenuManager : MonoBehaviour
     [SerializeField]
     private GameObject pausePanelBlur;
 
+    public bool spiderCanAttack = false;
+
     
     public bool isPuzzleComplete;
     
