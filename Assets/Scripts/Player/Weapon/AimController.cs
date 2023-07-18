@@ -103,8 +103,14 @@ namespace Assets.Scripts.Player.Weapon
         /// <returns></returns>
         GameObject EnemyHitControl()
         {
+
+            // Create a ray from the camera's position to the screen center.
+            Ray ray = Camera.main.ScreenPointToRay(new Vector3(Screen.width / 2, Screen.height / 2, 0));
+
+            // Cast the ray.
+            RaycastHit hit;
             // Silahın ucundan ileri doğru bir ışın gönder
-            if (Physics.Raycast(weaponPoint.position, weaponPoint.forward, out RaycastHit hit, 200f))
+            if (Physics.Raycast(ray, out hit))
             {
                 // Işının çarptığı nesne, "Enemy" etiketine sahip bir nesne ise
                 if (hit.collider.CompareTag("Enemy"))
