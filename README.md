@@ -20,7 +20,7 @@ AVALON- Shores of Destiny
 [Unity U-82]
 
 ## Ürün Açıklaması
-Oyunumuz Thirdperson RPG oyunudur. Ana karakterimiz birini kurtarmak için gizemli ada olan Avalon'u bulmaya çalışacağı aksiyon-macera oyunudur. Oyunun içerisinde oluşturulacak olan puzzle ile gizemli kapıları açarak bosslar ile savaşıp harita parçalarını toplamayı amaçlar fakat bu o kadar da kolay olmaz. Zehirli örümceklerle dolu olan adalarda hedefine ulaşmak için çeşitli engeller aşması gerekmektedir.Avalon'nun şifalı su kaynağına ulaşmak için adanın içerisinde kendine takviye olacak posion iksirleri ile hayatta kalmayı amaçlar.
+Oyunumuz Thirdperson RPG oyunudur. Ana karakterimiz birini kurtarmak için gizemli ada olan Avalon'u bulmaya çalışacağı aksiyon-macera oyunudur. Oyunun içerisinde oluşturulacak olan puzzle ile gizemli kapıları açarak bosslar ile savaşıp harita parçalarını toplamayı amaçlar fakat bu o kadar da kolay olmaz. Zehirli örümceklerle dolu olan adalarda hedefine ulaşmak için çeşitli engeller aşması gerekmektedir.Avalon'nun şifalı su kaynağına ulaşmak için hayatta kalmayı amaçlar.
 
 
 
