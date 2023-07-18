@@ -75,7 +75,7 @@ public class GameMenuManager : MonoBehaviour
                 PauseGame();
         }
 
-        if (Input.GetKey(KeyCode.Tab))
+        if (Input.GetKeyDown(KeyCode.Tab))
         {
             if (havePuzzleHint)
             {

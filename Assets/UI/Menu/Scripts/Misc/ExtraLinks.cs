@@ -6,7 +6,7 @@ namespace UI.Menu
     {
         public void DLC()
         {
-            Application.OpenURL("http://u3d.as/1JZG");
+            Application.OpenURL("https://www.youtube.com/watch?v=6JBdt22K6Sg");
         }
 
 

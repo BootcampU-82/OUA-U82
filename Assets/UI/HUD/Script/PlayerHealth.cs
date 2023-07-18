@@ -29,11 +29,6 @@ public class PlayerHealth : MonoBehaviour
     private void Update()
     {
 
-        // TEST ---------------------------------------------------------------------
-        if(Input.GetKeyUp(KeyCode.X))
-        {
-            TakeDamage();
-        }
     }
 
 
