@@ -20,7 +20,9 @@ namespace Assets.Scripts.Player.Weapon
 
 
         [SerializeField] GameObject poisonVfx;
-        
+        int bossCount = 0;
+
+
         /// <summary>
         /// Camera aim olayı için hizalandı mı?
         /// </summary>
@@ -122,6 +124,14 @@ namespace Assets.Scripts.Player.Weapon
                     
                     Debug.Log("Düşman vuruldu!");
                     return hit.transform.gameObject;
+                }
+                else if(hit.collider.CompareTag("EnemyBoss"))
+                {
+
+                    if (bossCount > 10)
+                    {
+                        Destroy(hit.collider.gameObject);
+                    }
                 }
                 else
                     return null;
