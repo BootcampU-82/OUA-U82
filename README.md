@@ -128,7 +128,59 @@ PC Genel Kitle
 
 
 - **Sprint Retrospective:**
-Ekip zamanla daha iyi kaynaştı ve iletişim sıkıntısı giderildi fakat  yoğunluklar sebebiyle bazı görevlerde gecikmeler oldu. Bu gecikmelerin 3. Sprint başında telafi edilmesi yönünde herkes birbirini motive etti. 
+Ekip zamanla daha iyi kaynaştı ve iletişim sıkıntısı giderildi fakat  yoğunluklar sebebiyle bazı görevlerde gecikmeler oldu. Bu gecikmelerin 3. Sprint başında telafi edilmesi yönünde herkes birbirini motive etti.
+
+# Sprint 3
+  Sprint Notları: Mape parkur ve puzzlelar yerleştirildi.Karakterin Map ile entegrasyonu dezenlendi. Uı entegrasyonu yapıldı. Oyun içi efekt ve soundlar eklendi. Karakterin AI ile etkileşimi üzerinde çalışıldı. Oyun sonu koşullar eklendi.Gerekli toplantılar yapıldı.Map düzenlemesi bitti.
+- **Sprint içinde tamamlanması tahmin edilen puan**: 100
+
+
+- **Puan tamamlama mantığı**: Toplamda proje boyunca tamamlanması gereken 320 puanlık backlog bulunmaktadır. 3 sprint'e bölündüğünde üçüncü sprint'in en azından 100 ile başlaması gerektiğine karar verildi.
+
+
+- **Daily Scrum**: Daily Scrum toplantıları Discord üzerinden yapılmasına karar verilmiştir. Daily Scrum toplantısı örneği jpeg veya word olarak Readme'de tarafımızdan paylaşılmaktadır.[DAILY SCRUM.docx](https://github.com/BootcampU-82/OUA_BootcampU82/files/12064855/DAILY.SCRUM.docx)
+
+
+
+- **Sprint board update**: Sprint board screenshotları:
+- ![Ekran görüntüsü 2023-07-16 210129](https://github.com/BootcampU-82/OUA_BootcampU82/assets/97284806/d808fe44-7014-4755-ae6f-46850a2f7c2d)
+
+
+
+
+
+
+
+
+- **Ürün Durumu**: Ekran görüntüleri:
+
+
+![Ekran görüntüsü 2023-07-16 210947](https://github.com/BootcampU-82/OUA_BootcampU82/assets/97284806/65109504-4b19-4fd0-8f5b-5c957e32f592)
+![Ekran görüntüsü 2023-07-16 211025](https://github.com/BootcampU-82/OUA_BootcampU82/assets/97284806/3c142159-2eae-47d3-84dc-cf040a831476)
+![Ekran görüntüsü 2023-07-16 211204](https://github.com/BootcampU-82/OUA_BootcampU82/assets/97284806/2929ce87-5084-4709-a665-e265cbad1ca5)
+![Ekran görüntüsü 2023-07-16 211113](https://github.com/BootcampU-82/OUA_BootcampU82/assets/97284806/7115be3f-900d-4af0-ac6f-44a75711a6f8)
+![Ekran görüntüsü 2023-07-16 211614](https://github.com/BootcampU-82/OUA_BootcampU82/assets/97284806/14f702fa-477a-4cff-a3ea-2f22e542557b)
+![Ekran görüntüsü 2023-07-16 211701](https://github.com/BootcampU-82/OUA_BootcampU82/assets/97284806/db1b212d-d139-47df-accb-6d85970e52b8)
+
+
+
+
+
+
+
+
+
+- **Sprint Review**:Genel olarak kordineli çalışma konusunda geç kalındı. Takım üyeleri bu konu hakkında bilgilendirildi. 3. Sprintte daha hızlı çalışmaya yönlenildi. Birleştirme yapılarak düzen oturtuldu.Mape parkur ve puzzlelar yerleştirildi.Karakterin Map ile entegrasyonu dezenlendi. Uı entegrasyonu yapıldı. Oyun içi efekt ve soundlar eklendi. Karakterin AI ile etkileşimi üzerinde çalışıldı. Oyun sonu koşullar eklendi.Gerekli toplantılar yapıldı.Map düzenlemesi bitti.
+
+- **Sprint Retrospective:**
+- Ekip içi iletişimsizlik ve müsaitlik durumu koordineli olabilirdi. Takım üyelerinin verilen görevi tamamlaması yeterli oldu.Aklımmızdaki oyunu tam çıkaramasakta ortaya bir ürün koyabildik.Önemli olan kendimizi geliştirmekti. Bu sayede daha fazla konuda bilgilendik.Her şey için teşekkürler.
+
+
+---
+
+## Product Backlog URL
+
+[Unity U-82 Trello Backlog Board] https://trello.com/invite/b/E0WiTlWp/ATTI6ad838a2436b131db108be49f07b00b97F0D4CA9/sprint-3
 
 
 ## Product Backlog URL
