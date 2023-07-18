@@ -35,6 +35,15 @@ public class BasicAI : MonoBehaviour
         }
     }
 
+
+    private void OnTriggerStay(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            target.GetComponent<PlayerHealth>().TakeDamage();
+        }
+    }
+
     private float CalculateDistanceWithPlayer(GameObject gameObject)
     {
         return Vector3.Distance(gameObject.transform.position,target.transform.position);

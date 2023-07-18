@@ -137,7 +137,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bab4674002b4c745bfe2f5923598d0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attactDistance: 2
+  attactDistance: 0.2
   bloodVfx: {fileID: 2217652460993640326, guid: 4aa047c643b2d4645b4baa7de94051f3,
     type: 3}
 --- !u!54 &4275306014818544655

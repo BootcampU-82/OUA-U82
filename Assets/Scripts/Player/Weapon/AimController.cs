@@ -132,6 +132,7 @@ namespace Assets.Scripts.Player.Weapon
                     {
                         Destroy(hit.collider.gameObject);
                     }
+                    return hit.transform.gameObject;
                 }
                 else
                     return null;
