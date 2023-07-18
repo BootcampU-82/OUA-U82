@@ -130,6 +130,10 @@ PC Genel Kitle
 - **Sprint Retrospective:**
 Ekip zamanla daha iyi kaynaştı ve iletişim sıkıntısı giderildi fakat  yoğunluklar sebebiyle bazı görevlerde gecikmeler oldu. Bu gecikmelerin 3. Sprint başında telafi edilmesi yönünde herkes birbirini motive etti.
 
+## Product Backlog URL
+
+[Unity U-82 Trello Backlog Board] https://trello.com/invite/b/RSYLBB3a/ATTI9706685e9ab7063442d7c69d350a3883D7A92FAE/sprint-2
+
 # Sprint 3
   Sprint Notları: Mape parkur ve puzzlelar yerleştirildi.Karakterin Map ile entegrasyonu dezenlendi. Uı entegrasyonu yapıldı. Oyun içi efekt ve soundlar eklendi. Karakterin AI ile etkileşimi üzerinde çalışıldı. Oyun sonu koşullar eklendi.Gerekli toplantılar yapıldı.Map düzenlemesi bitti.
 - **Sprint içinde tamamlanması tahmin edilen puan**: 100
@@ -183,6 +187,4 @@ Ekip zamanla daha iyi kaynaştı ve iletişim sıkıntısı giderildi fakat  yo�
 [Unity U-82 Trello Backlog Board] https://trello.com/invite/b/E0WiTlWp/ATTI6ad838a2436b131db108be49f07b00b97F0D4CA9/sprint-3
 
 
-## Product Backlog URL
 
-[Unity U-82 Trello Backlog Board] https://trello.com/invite/b/RSYLBB3a/ATTI9706685e9ab7063442d7c69d350a3883D7A92FAE/sprint-2
