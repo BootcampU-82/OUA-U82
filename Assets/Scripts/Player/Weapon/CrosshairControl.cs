@@ -35,7 +35,7 @@ namespace Assets.Scripts.Player.Weapon
             if (Physics.Raycast(ray, out hit, 200f))
             {
                 // Işının "Enemy" etiketine sahip bir nesneyle çarpıştığı durumda
-                if (hit.collider.CompareTag("Enemy"))
+                if (hit.collider.CompareTag("Enemy") && hit.collider.CompareTag("EnemyBoss"))
                 {
                     return true;
                 }

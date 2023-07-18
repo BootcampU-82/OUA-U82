@@ -8,6 +8,33 @@ TagManager:
   - UpperLedge
   - CinemachineTarget
   - Enemy
+  - Puzzle
+  - PuzzlePart
+  - Rotate90_4
+  - Rotate180_8
+  - Rotate270_3
+  - Rotate90_1
+  - Rotate270_9
+  - Rotate90_8
+  - Rotate90_6
+  - PuzzleFail
+  - Rotate360_9
+  - Rotate90_9
+  - Rotate90_5
+  - Rotate180_1
+  - Rotate180_4
+  - Rotate90_7
+  - Rotate90_2
+  - Rotate270_7
+  - Rotate180_3
+  - Rotate360_8
+  - Rotate90_3
+  - Rotate180_9
+  - Rotate360_5
+  - Rotate180_2
+  - Rotate270_1
+  - Rotate360_1
+  - EnemyBoss
   layers:
   - Default
   - TransparentFX

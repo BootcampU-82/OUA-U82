@@ -25,6 +25,10 @@ public class GameMenuManager : MonoBehaviour
     
     public bool isPaused = false;
 
+    public bool havePuzzleHint=false;
+
+    public bool bossDead=false;
+
 
     private static GameMenuManager instance;
 
@@ -73,22 +77,22 @@ public class GameMenuManager : MonoBehaviour
 
         if (Input.GetKey(KeyCode.Tab))
         {
-
-            Debug.Log("Pressed.");
-
-            if (hintOpen)
+            if (havePuzzleHint)
             {
-                Debug.Log("open" + hintOpen);
-                hintUI.transform.DOScale(hintScale, hintSpeed);
-                hintUI.transform.gameObject.SetActive(false);
-                hintOpen = false;
-            }
-            else
-            {
-                Debug.Log("closed" + hintOpen);
-                hintUI.transform.gameObject.SetActive(true);
-                hintUI.transform.DOScale(1.75f, hintSpeed);
-                hintOpen = true;
+                if (hintOpen)
+                {
+                    Debug.Log("open" + hintOpen);
+                    hintUI.transform.DOScale(hintScale, hintSpeed);
+                    hintUI.transform.gameObject.SetActive(false);
+                    hintOpen = false;
+                }
+                else
+                {
+                    Debug.Log("closed" + hintOpen);
+                    hintUI.transform.gameObject.SetActive(true);
+                    hintUI.transform.DOScale(1.75f, hintSpeed);
+                    hintOpen = true;
+                }
             }
         }
     }

@@ -9,7 +9,7 @@ public class SpikeTrigger : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             transform.DOMoveY(1.40f,0.5f);
-            other.gameObject.GetComponent<PlayerHealth>().TakeDamage();
+            other.gameObject.GetComponent<PlayerHealth>().Die();
         }
     }
 }

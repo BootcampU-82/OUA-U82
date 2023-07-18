@@ -15,6 +15,10 @@ namespace Assets.Scripts.Player.Weapon
 
         CameraController cameraController;
 
+        float enemyCount=0;
+
+        [SerializeField] GameObject hintUI;
+        [SerializeField] GameObject FinalMap;
 
         [SerializeField] Transform mainCamera, cameraWeaponPos;
 
@@ -82,8 +86,6 @@ namespace Assets.Scripts.Player.Weapon
                 }
             
             
-            
-            
             float rotValue;
             if (mainCamera.eulerAngles.x>180)
                 rotValue = -20f - (mainCamera.eulerAngles.x - 360f);
@@ -117,6 +119,13 @@ namespace Assets.Scripts.Player.Weapon
                 // Işının çarptığı nesne, "Enemy" etiketine sahip bir nesne ise
                 if (hit.collider.CompareTag("Enemy"))
                 {
+                    enemyCount++;
+                    if (enemyCount ==3)
+                    {
+                        GameMenuManager.Instance.havePuzzleHint = true;
+                        hintUI.SetActive(true);
+                        Destroy(hintUI, 1f);
+                    }
 
                     GameObject blood = Instantiate(poisonVfx, hit.transform);
                     Destroy(hit.collider.gameObject);
@@ -127,10 +136,13 @@ namespace Assets.Scripts.Player.Weapon
                 }
                 else if(hit.collider.CompareTag("EnemyBoss"))
                 {
-
+                    Debug.Log("Boss Vuruldu");
+                    bossCount++;
                     if (bossCount > 10)
                     {
+                        GameMenuManager.Instance.bossDead = true;
                         Destroy(hit.collider.gameObject);
+                        FinalMap.SetActive(true);
                     }
                     return hit.transform.gameObject;
                 }
