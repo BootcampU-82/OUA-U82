@@ -1,8 +1,10 @@
 using DG.Tweening.Core.Easing;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Burst.CompilerServices;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using DG.Tweening;
 
 public class GameMenuManager : MonoBehaviour
 {
@@ -13,7 +15,12 @@ public class GameMenuManager : MonoBehaviour
 
     public bool spiderCanAttack = false;
 
-    
+
+    [SerializeField] GameObject hintUI;
+    bool hintOpen=false;
+    [SerializeField] float hintSpeed;
+    [SerializeField] float hintScale;
+
     public bool isPuzzleComplete;
     
     public bool isPaused = false;
@@ -62,6 +69,27 @@ public class GameMenuManager : MonoBehaviour
                 ResumeGame();
             else
                 PauseGame();
+        }
+
+        if (Input.GetKey(KeyCode.Tab))
+        {
+
+            Debug.Log("Pressed.");
+
+            if (hintOpen)
+            {
+                Debug.Log("open" + hintOpen);
+                hintUI.transform.DOScale(hintScale, hintSpeed);
+                hintUI.transform.gameObject.SetActive(false);
+                hintOpen = false;
+            }
+            else
+            {
+                Debug.Log("closed" + hintOpen);
+                hintUI.transform.gameObject.SetActive(true);
+                hintUI.transform.DOScale(1.75f, hintSpeed);
+                hintOpen = true;
+            }
         }
     }
 
