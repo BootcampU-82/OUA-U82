@@ -1,6 +1,6 @@
 # **Takım İsmi**
 
-Unity U-82
+Unity U-82 - Kraken Games
 
 # Ürün İle İlgili Bilgiler
 
